@@ -1,17 +1,24 @@
 package kaitor.id.talkingenglish;
 
+import android.graphics.ColorFilter;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
-import android.util.Log;
 import android.widget.TabHost;
 
+import kaitor.id.talkingenglish.main.DictionaryFragment;
 import kaitor.id.talkingenglish.main.ExampleFragment;
+import kaitor.id.talkingenglish.main.LearnFragment;
+import kaitor.id.talkingenglish.main.ProfileFragment;
 
 public class MainActivity extends FragmentActivity {
 
     private FragmentTabHost mTabHost;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,36 +31,20 @@ public class MainActivity extends FragmentActivity {
 //        mTabHost.addTab(mTabHost.newTabSpec("simple").setIndicator("Simple"),
 //                FragmentStackSupport.CountingFragment.class, null);
 
-
+        Drawable learnIcon,profileIcon,dictionaryIcon;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            mTabHost.addTab(mTabHost.newTabSpec("Learn").setIndicator("", getResources().getDrawable(R.drawable.ic_class_black_24dp, null)), ExampleFragment.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("Profile").setIndicator("", getResources().getDrawable(R.drawable.ic_face_black_24dp, null)), ExampleFragment.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("Dictionary").setIndicator("", getResources().getDrawable(R.drawable.ic_search_black_24dp, null)), ExampleFragment.class, null);
-        } else {
-            mTabHost.addTab(mTabHost.newTabSpec("Learn").setIndicator("", getResources().getDrawable(R.drawable.ic_class_black_24dp)), ExampleFragment.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("Profile").setIndicator("", getResources().getDrawable(R.drawable.ic_face_black_24dp)), ExampleFragment.class, null);
-            mTabHost.addTab(mTabHost.newTabSpec("Dictionary").setIndicator("", getResources().getDrawable(R.drawable.ic_search_black_24dp)), ExampleFragment.class, null);
+            learnIcon = getDrawable(R.drawable.ic_class_black_24dp);
+            profileIcon = getDrawable(R.drawable.ic_face_black_24dp);
+            dictionaryIcon = getDrawable(R.drawable.ic_search_black_24dp);
         }
-
-        mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-            @Override
-            public void onTabChanged(String tabId) {
-                for(int i=0;i<mTabHost.getTabWidget().getChildCount();i++){
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        mTabHost.getTabWidget().getChildAt(i).setBackgroundColor(getResources().getColor(R.color.fragment_welcome_background,null));
-                    }
-                    else{
-                        mTabHost.getTabWidget().getChildAt(i).setBackgroundColor(getResources().getColor(R.color.fragment_welcome_background));
-                    }
-                }
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    mTabHost.getCurrentTabView().setBackgroundColor(getResources().getColor(R.color.marker_white,null));
-                }
-                else{
-                    mTabHost.getCurrentTabView().setBackgroundColor(getResources().getColor(R.color.marker_white));
-                }
-            }
-        });
+        else{
+            learnIcon = getResources().getDrawable(R.drawable.ic_class_black_24dp);
+            profileIcon = getResources().getDrawable(R.drawable.ic_face_black_24dp);
+            dictionaryIcon = getResources().getDrawable(R.drawable.ic_search_black_24dp);
+        }
+        mTabHost.addTab(mTabHost.newTabSpec("Learn").setIndicator("",learnIcon),LearnFragment.class,null);
+        mTabHost.addTab(mTabHost.newTabSpec("Profile").setIndicator("",profileIcon), ProfileFragment.class,null);
+        mTabHost.addTab(mTabHost.newTabSpec("Dictionary").setIndicator("",dictionaryIcon),DictionaryFragment.class,null);
 
     }
 }

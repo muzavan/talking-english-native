@@ -4,6 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="fragment_welcome_background">#47bbbb</color>
-    <color name="marker_gray">#ddd</color>
-    <color name="marker_white">#fff</color>
+    <color name="marker_gray">#dddddd</color>
+    <color name="marker_white">#ffffff</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="green_beginner">#51b860</color>
+    <color name="white">#ffffff</color>
+    <color name="orange_intermediate">#fdb15e</color>
+    <color name="red_advanced">#e85a59</color>
+    <color name="yellow">#FDB813</color>
 </resources>
