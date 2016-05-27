@@ -46,8 +46,6 @@ public class WelcomeActivity extends FragmentActivity {
         mPagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);
 
-        setDefaultMarker();
-        setActiveMarker(0);
 
 
         mPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -72,6 +70,10 @@ public class WelcomeActivity extends FragmentActivity {
         imageWelcomeMarker1 = (ImageView) findViewById(R.id.image_welcome_marker_1);
         imageWelcomeMarker2 = (ImageView) findViewById(R.id.image_welcome_marker_2);
         imageWelcomeMarker3 = (ImageView) findViewById(R.id.image_welcome_marker_3);
+
+
+        setDefaultMarker();
+        setActiveMarker(0);
     }
 
     @Override
