@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="fragment_welcome_background">#47bbbb</color>
+    <color name="marker_gray">#ddd</color>
+    <color name="marker_white">#fff</color>
 </resources>

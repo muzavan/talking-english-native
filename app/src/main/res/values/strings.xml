@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TalkingEnglish</string>
+    <string name="welcome">Welcome!</string>
+    <string name="welcome_caption_0">Learn</string>
+    <string name="welcome_details_0">Learn English with ease.\n You can improve your English by using this application for daily communication. </string>
+    <string name="welcome_caption_1">Play</string>
+    <string name="welcome_details_1">Learning by playing.\n Earn the highest score possible as you answer the questions. </string>
+    <string name="welcome_ready">Ready?</string>
+    <string name="ready_caption">Input your name!</string>
 </resources>
