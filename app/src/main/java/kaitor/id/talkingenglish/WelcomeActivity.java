@@ -1,5 +1,6 @@
 package kaitor.id.talkingenglish;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -91,7 +92,9 @@ public class WelcomeActivity extends FragmentActivity {
     private void checkLogin() {
         ProfileUtil util = new ProfileUtil(getApplicationContext());
         if (util.isLogin()) {
-            // TODO : Next Activity
+            Intent intent = new Intent(this,MainActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
 

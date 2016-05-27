@@ -1,6 +1,7 @@
 package kaitor.id.talkingenglish.welcome;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import kaitor.id.talkingenglish.MainActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.util.ProfileUtil;
 
@@ -40,8 +42,9 @@ public class ReadyFragment extends Fragment {
                 else{
                     ProfileUtil util = new ProfileUtil(getContext());
                     util.setName(editName.getText().toString());
-                    // TODO : Next Activity
-
+                    Intent intent = new Intent(getActivity(),MainActivity.class);
+                    startActivity(intent);
+                    getActivity().finish();
                 }
             }
         });
