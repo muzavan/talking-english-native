@@ -49,4 +49,8 @@ public class Dictionary {
     private String translation; // Indonesian Word
     private String lip; // Resource Name for Lips Reading
     private String hand; // Resource Name for Hand Gesture
+
+    public Dictionary(String word){
+        this.word = word;
+    }
 }

@@ -6,15 +6,15 @@
               android:layout_marginTop="4dp"
               android:layout_marginBottom="4dp"
               android:layout_width="match_parent"
-              android:layout_height="80dp">
+              android:layout_height="50dp">
 
     <TextView
         android:layout_width="match_parent"
         android:text="Word"
-        android:textSize="@dimen/h4_welcome_text"
+        android:textSize="@dimen/p_welcome_text"
         android:paddingLeft="16dp"
         android:id="@+id/tv_word"
         android:gravity="center_vertical"
-        android:layout_height="match_parent"/>
+        android:layout_height="50dp"/>
 
 </LinearLayout>

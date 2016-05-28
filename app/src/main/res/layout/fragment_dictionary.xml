@@ -3,5 +3,23 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:textSize="@dimen/h4_welcome_text"
+        android:hint="Your word"
+        android:id="@+id/edit_search_word"
+        android:layout_height="60dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_dictionary"
+        android:layout_height="wrap_content">
+
+    </ListView>
 
 </LinearLayout>

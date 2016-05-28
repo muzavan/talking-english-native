@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import kaitor.id.talkingenglish.R;
@@ -16,11 +17,25 @@ import kaitor.id.talkingenglish.R;
  */
 public class DictionaryAdapter extends ArrayAdapter<Dictionary> {
 
+    private ArrayList<Dictionary> allWords = new ArrayList<>();
+
     public DictionaryAdapter(Context context, int resource, List<Dictionary> objects) {
         super(context, resource, objects);
+        initData();
     }
 
-    public View getView(int position, View convertView, ViewGroup parent){
+
+    public void initData() {
+        // TODO : Get All Words from JSON
+        allWords.add(new Dictionary("Sing"));
+        allWords.add(new Dictionary("Mother"));
+        allWords.add(new Dictionary("Father"));
+        allWords.add(new Dictionary("You"));
+        allWords.add(new Dictionary("Close"));
+        addAll(allWords);
+    }
+
+    public View getView(int position, View convertView, ViewGroup parent) {
 
         // assign the view we are converting to a local variable
         View v = convertView;
@@ -34,8 +49,8 @@ public class DictionaryAdapter extends ArrayAdapter<Dictionary> {
 
         Dictionary dict = getItem(position);
 
-        if(dict != null){
-            TextView tvWord = (TextView)v.findViewById(R.id.tv_word);
+        if (dict != null) {
+            TextView tvWord = (TextView) v.findViewById(R.id.tv_word);
             tvWord.setText(dict.getWord());
         }
 
@@ -47,5 +62,14 @@ public class DictionaryAdapter extends ArrayAdapter<Dictionary> {
         });
 
         return v;
+    }
+
+    public void filterByWord(String word) {
+        clear();
+        for (Dictionary d : allWords) {
+            if (d.getWord().toLowerCase().contains(word.toLowerCase())) {
+                add(d);
+            }
+        }
     }
 }
