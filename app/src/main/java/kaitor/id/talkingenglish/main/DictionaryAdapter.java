@@ -1,6 +1,7 @@
 package kaitor.id.talkingenglish.main;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import kaitor.id.talkingenglish.DictionaryActivity;
+import kaitor.id.talkingenglish.MainActivity;
 import kaitor.id.talkingenglish.R;
 
 /**
@@ -27,15 +30,15 @@ public class DictionaryAdapter extends ArrayAdapter<Dictionary> {
 
     public void initData() {
         // TODO : Get All Words from JSON
-        allWords.add(new Dictionary("Sing"));
-        allWords.add(new Dictionary("Mother"));
-        allWords.add(new Dictionary("Father"));
-        allWords.add(new Dictionary("You"));
-        allWords.add(new Dictionary("Close"));
+        allWords.add(new Dictionary("Sing","Bernyanyi","(v) Kata kerja","",""));
+        allWords.add(new Dictionary("Mother","Ibu","(n) Kata benda","",""));
+        allWords.add(new Dictionary("Father","Ayah","(n) Kata benda","",""));
+        allWords.add(new Dictionary("You","Kamu/Engkau/Dirimu","(p) Kata ganti orang","",""));
+        allWords.add(new Dictionary("Close","Tutup","(v) Kata kerja","",""));
         addAll(allWords);
     }
 
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         // assign the view we are converting to a local variable
         View v = convertView;
@@ -52,14 +55,16 @@ public class DictionaryAdapter extends ArrayAdapter<Dictionary> {
         if (dict != null) {
             TextView tvWord = (TextView) v.findViewById(R.id.tv_word);
             tvWord.setText(dict.getWord());
-        }
+            tvWord.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getContext(), DictionaryActivity.class);
+                    intent.putExtra("Dictionary",getItem(position));
+                    getContext().startActivity(intent);
 
-        v.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TO-DO : Next Fragment to Show Word Detail
-            }
-        });
+                }
+            });
+        }
 
         return v;
     }

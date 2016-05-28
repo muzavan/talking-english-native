@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".MainActivity">
         </activity>
+        <activity android:name=".DictionaryActivity">
+        </activity>
     </application>
 
 </manifest>
