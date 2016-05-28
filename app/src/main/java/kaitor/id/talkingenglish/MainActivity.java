@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v7.widget.Toolbar;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 import kaitor.id.talkingenglish.main.DictionaryFragment;
 import kaitor.id.talkingenglish.main.LearnFragment;
@@ -23,7 +24,8 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Learn");
+        final TextView toolbarTitle = (TextView) findViewById(R.id.toolbar_title);
+        toolbarTitle.setText("Learn");
 
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.main_content);
@@ -45,7 +47,7 @@ public class MainActivity extends FragmentActivity {
         mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
-                toolbar.setTitle(mTabHost.getCurrentTabTag());
+                toolbarTitle.setText(mTabHost.getCurrentTabTag());
                 mTabHost.clearFocus();
             }
         });
