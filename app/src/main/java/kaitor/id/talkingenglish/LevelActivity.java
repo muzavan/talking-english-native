@@ -16,7 +16,7 @@ import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
 
 public class LevelActivity extends FragmentActivity {
     FragmentManager fragmentManager;
-    ArrayList<LevelFragment> levels;
+    ArrayList<LevelFragment> levels = new ArrayList<>();
     ProgressBar progressBar;
     TextView tvScore;
     Button buttonNext;
@@ -28,6 +28,7 @@ public class LevelActivity extends FragmentActivity {
         setContentView(R.layout.activity_level);
 
         //TODO Initialize Level Fragments
+        initLevels();
 
         currentLevel = 0;
 
