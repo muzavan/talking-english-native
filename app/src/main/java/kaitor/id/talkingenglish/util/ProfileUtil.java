@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 public class ProfileUtil {
     public final static String PREF_NAME = "talking_english";
     public final static String KEY_NAME = "talking_name";
+    public final static String KEY_SCORE = "talking_score";
     private SharedPreferences mSharedPreferences;
 
     public ProfileUtil(Context ctx){
@@ -27,5 +28,13 @@ public class ProfileUtil {
 
     public boolean isLogin(){
         return mSharedPreferences.contains(KEY_NAME);
+    }
+
+    public int getScore() {return mSharedPreferences.getInt(KEY_SCORE,0);}
+
+    public void setScore(int score){
+        SharedPreferences.Editor editor = mSharedPreferences.edit();
+        editor.putInt(KEY_SCORE,score);
+        editor.commit();
     }
 }

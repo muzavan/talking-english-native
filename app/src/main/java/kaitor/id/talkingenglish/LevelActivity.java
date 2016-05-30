@@ -14,12 +14,14 @@ import java.util.ArrayList;
 import kaitor.id.talkingenglish.level.fragment.BlankFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
+import kaitor.id.talkingenglish.level.fragment.TypingFragment;
 
 public class LevelActivity extends FragmentActivity {
     FragmentManager fragmentManager;
     ArrayList<LevelFragment> levels = new ArrayList<>();
     ProgressBar progressBar;
     TextView tvScore;
+    TextView tvTitle;
     private Button buttonNext;
     int currentLevel, maxLevel;
 
@@ -35,6 +37,8 @@ public class LevelActivity extends FragmentActivity {
         maxLevel = levels.size();
 
         // Initialize Component
+        tvTitle = (TextView) findViewById(R.id.toolbar_title);
+        tvTitle.setText("Level-"+(currentLevel+1));
         progressBar = (ProgressBar) findViewById(R.id.progress_bar);
         tvScore = (TextView) findViewById(R.id.tv_score);
         progressBar.setProgress(1);
@@ -68,6 +72,8 @@ public class LevelActivity extends FragmentActivity {
         levels.add(frag);
         LevelFragment frag1 = new BlankFragment();
         levels.add(frag1);
+        LevelFragment frag2 = new TypingFragment();
+        levels.add(frag2);
     }
 
     public void setButtonText(String text){
@@ -81,6 +87,7 @@ public class LevelActivity extends FragmentActivity {
     public void changeLevel(){
         currentLevel++;
         progressBar.setProgress(currentLevel+1);
+        tvTitle.setText("Level-"+(currentLevel+1));
         if(currentLevel!=maxLevel){
             Fragment fragment = levels.get(currentLevel);
             fragmentManager.beginTransaction().replace(R.id.main_content,fragment).commit();

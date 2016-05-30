@@ -11,4 +11,9 @@
         <item name="colorControlHighlight">#fff</item>
     </style>
 
+    <style name="EditTheme">
+        <item name="colorControlNormal">#000</item>
+        <item name="colorControlActivated">#000</item>
+        <item name="colorControlHighlight">#fff</item>
+    </style>
 </resources>
