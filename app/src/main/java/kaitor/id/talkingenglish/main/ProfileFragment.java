@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import kaitor.id.talkingenglish.R;
@@ -18,6 +19,7 @@ import kaitor.id.talkingenglish.util.ProfileUtil;
  * Created by user pc on 5/28/2016.
  */
 public class ProfileFragment extends Fragment {
+    private TextView tvScore;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -47,6 +49,16 @@ public class ProfileFragment extends Fragment {
                 }
             }
         });
+
+        tvScore = (TextView) view.findViewById(R.id.tv_score);
+        tvScore.setText(util.getScore()+"");
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        ProfileUtil util = new ProfileUtil(getContext());
+        tvScore.setText(util.getScore()+"");
     }
 }

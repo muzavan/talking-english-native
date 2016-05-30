@@ -52,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
+            android:id="@+id/tv_score"
             android:text="0"
             android:textColor="@color/orange_intermediate"
             android:textSize="48sp"/>

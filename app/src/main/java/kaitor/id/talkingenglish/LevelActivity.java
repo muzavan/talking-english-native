@@ -1,5 +1,6 @@
 package kaitor.id.talkingenglish;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -15,6 +16,7 @@ import kaitor.id.talkingenglish.level.fragment.BlankFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
 import kaitor.id.talkingenglish.level.fragment.TypingFragment;
+import kaitor.id.talkingenglish.util.ProfileUtil;
 
 public class LevelActivity extends FragmentActivity {
     FragmentManager fragmentManager;
@@ -93,6 +95,9 @@ public class LevelActivity extends FragmentActivity {
             fragmentManager.beginTransaction().replace(R.id.main_content,fragment).commit();
         }
         else{
+            ProfileUtil util = new ProfileUtil(getBaseContext());
+            int currentScore = Integer.valueOf(tvScore.getText().toString());
+            util.setScore(util.getScore()+currentScore);
             finish();
         }
     }
