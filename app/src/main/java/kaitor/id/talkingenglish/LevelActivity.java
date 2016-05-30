@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import kaitor.id.talkingenglish.level.fragment.BlankFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
 
@@ -19,7 +20,7 @@ public class LevelActivity extends FragmentActivity {
     ArrayList<LevelFragment> levels = new ArrayList<>();
     ProgressBar progressBar;
     TextView tvScore;
-    Button buttonNext;
+    private Button buttonNext;
     int currentLevel, maxLevel;
 
     @Override
@@ -31,23 +32,18 @@ public class LevelActivity extends FragmentActivity {
         initLevels();
 
         currentLevel = 0;
+        maxLevel = levels.size();
 
         // Initialize Component
-        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progress_bar);
-        TextView tvScore = (TextView) findViewById(R.id.tv_score);
+        progressBar = (ProgressBar) findViewById(R.id.progress_bar);
+        tvScore = (TextView) findViewById(R.id.tv_score);
+        progressBar.setProgress(1);
+        progressBar.setMax(maxLevel);
         tvScore.setText(""+0);
-        Button buttonNext = (Button) findViewById(R.id.button_next);
-        fragmentManager = getSupportFragmentManager();
+        buttonNext = (Button) findViewById(R.id.button_next);
 
+        fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main_content,levels.get(0)).commit();
-        buttonNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                currentLevel++;
-                Fragment fragment = levels.get(currentLevel);
-                fragmentManager.beginTransaction().replace(R.id.main_content,fragment).commit();
-            }
-        });
     }
 
     public void disableButton(){
@@ -70,10 +66,28 @@ public class LevelActivity extends FragmentActivity {
         //TODO : to-be-defined, take from JSON, init using Fragment class
         LevelFragment frag = new MultipleFragment();
         levels.add(frag);
+        LevelFragment frag1 = new BlankFragment();
+        levels.add(frag1);
     }
 
     public void setButtonText(String text){
         buttonNext.setText(text);
+    }
+
+    public Button getButtonNext(){
+        return buttonNext;
+    }
+
+    public void changeLevel(){
+        currentLevel++;
+        progressBar.setProgress(currentLevel+1);
+        if(currentLevel!=maxLevel){
+            Fragment fragment = levels.get(currentLevel);
+            fragmentManager.beginTransaction().replace(R.id.main_content,fragment).commit();
+        }
+        else{
+            finish();
+        }
     }
 
 

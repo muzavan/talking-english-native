@@ -1,13 +1,17 @@
 package kaitor.id.talkingenglish.level.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.level.model.MultipleLevel;
 
@@ -16,6 +20,7 @@ import kaitor.id.talkingenglish.level.model.MultipleLevel;
  */
 public class MultipleFragment extends LevelFragment {
     private final float ALPHA = 0.4f;
+    private int selectedAnswer;
     private MultipleLevel actualLevel;
     private boolean helpShown = false;
     ImageView imageAnswer1;
@@ -50,6 +55,7 @@ public class MultipleFragment extends LevelFragment {
 
         tvQuestion.setText(actualLevel.getQuestion());
         tvTranslation.setText(actualLevel.getTranslatedQuestion());
+        tvTranslation.setVisibility(View.GONE);
 
         tvHelp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +76,7 @@ public class MultipleFragment extends LevelFragment {
             public void onClick(View v) {
                 initAnswer();
                 imageAnswer1.setAlpha(1.f);
+                selectedAnswer=1;
             }
         });
 
@@ -79,6 +86,7 @@ public class MultipleFragment extends LevelFragment {
             public void onClick(View v) {
                 initAnswer();
                 imageAnswer2.setAlpha(1.f);
+                selectedAnswer=2;
             }
         });
 
@@ -88,6 +96,7 @@ public class MultipleFragment extends LevelFragment {
             public void onClick(View v) {
                 initAnswer();
                 imageAnswer3.setAlpha(1.f);
+                selectedAnswer=3;
             }
         });
 
@@ -97,8 +106,12 @@ public class MultipleFragment extends LevelFragment {
             public void onClick(View v) {
                 initAnswer();
                 imageAnswer0.setAlpha(1.f);
+                selectedAnswer=0;
             }
         });
+
+
+        setNextButton();
 
 
         return view;
@@ -121,4 +134,26 @@ public class MultipleFragment extends LevelFragment {
         imageAnswer3.setAlpha(ALPHA);
         imageAnswer0.setAlpha(ALPHA);
     }
+
+    public void setNextButton(){
+        final LevelActivity activity = (LevelActivity) getActivity();
+        Button btnNext = activity.getButtonNext();//(Button)activity.findViewById(R.id.button_next);
+
+        btnNext.setText("CHECK");
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(selectedAnswer == actualLevel.getAnswerIndex()){
+                    activity.addScore(20);
+                    Toast.makeText(getContext(),"You're right!",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(getContext(),"You're wrong!",Toast.LENGTH_SHORT).show();
+                }
+                activity.changeLevel();
+            }
+        });
+    }
+
+
 }
