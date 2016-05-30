@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:id="@+id/layout_beginner"
         android:background="@color/green_beginner"
         android:orientation="horizontal">
 
@@ -36,6 +37,7 @@
             <ProgressBar
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
+                android:id="@+id/progress_beginner"
                 android:layout_height="10dp"
                 android:layout_weight="0"
                 android:max="100"
@@ -49,6 +51,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:id="@+id/layout_intermediate"
         android:layout_marginTop="20dp"
         android:background="@color/orange_intermediate"
         android:orientation="horizontal">
@@ -76,6 +79,7 @@
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
+                android:id="@+id/progress_intermediate"
                 android:max="100"
                 android:paddingRight="20dp"
                 android:progress="20"
@@ -88,6 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:id="@+id/layout_advanced"
         android:background="@color/red_advanced"
         android:orientation="horizontal">
 
@@ -115,6 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:max="100"
+                android:id="@+id/progress_advanced"
                 android:paddingRight="20dp"
                 android:progress="20"
                 android:progressDrawable="@drawable/greenprogress"
