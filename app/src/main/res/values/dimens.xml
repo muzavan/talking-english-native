@@ -5,7 +5,7 @@
     <dimen name="fragment_welcome_top">120dp</dimen>
     <dimen name="h1_welcome_text">36sp</dimen>
     <dimen name="fragment_welcome_bottom">10dp</dimen>
-    <dimen name="h4_welcome_text">24dp</dimen>
+    <dimen name="h4_welcome_text">24sp</dimen>
     <dimen name="p_welcome_text">16sp</dimen>
     <dimen name="tab_max_width">264dp</dimen>
     <dimen name="tab_padding_bottom">16dp</dimen>

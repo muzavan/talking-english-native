@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -30,27 +32,68 @@ public class MainActivity extends FragmentActivity {
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.main_content);
 
-        Drawable learnIcon,profileIcon,dictionaryIcon;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            learnIcon = getDrawable(R.drawable.ic_class_black_24dp);
-            profileIcon = getDrawable(R.drawable.ic_face_black_24dp);
-            dictionaryIcon = getDrawable(R.drawable.ic_search_black_24dp);
+//        Drawable learnIcon,profileIcon,dictionaryIcon;
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            learnIcon = getDrawable(R.drawable.ic_class_black_24dp);
+//            profileIcon = getDrawable(R.drawable.ic_face_black_24dp);
+//            dictionaryIcon = getDrawable(R.drawable.ic_search_black_24dp);
+//        }
+//        else{
+//            learnIcon = getResources().getDrawable(R.drawable.ic_class_black_24dp);
+//            profileIcon = getResources().getDrawable(R.drawable.ic_face_black_24dp);
+//            dictionaryIcon = getResources().getDrawable(R.drawable.ic_search_black_24dp);
+//        }
+        View v0 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);
+        View v1 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);
+        View v2 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);
+
+        ImageView iconV0 = (ImageView) v0.findViewById(R.id.image_indicator);
+        iconV0.setImageResource(R.drawable.ic_class_black_24dp);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            iconV0.setColorFilter(getColor(R.color.marker_white));
         }
         else{
-            learnIcon = getResources().getDrawable(R.drawable.ic_class_black_24dp);
-            profileIcon = getResources().getDrawable(R.drawable.ic_face_black_24dp);
-            dictionaryIcon = getResources().getDrawable(R.drawable.ic_search_black_24dp);
+            iconV0.setColorFilter(getResources().getColor(R.color.marker_white));
         }
-        mTabHost.addTab(mTabHost.newTabSpec("Learn").setIndicator("",learnIcon),LearnFragment.class,null);
-        mTabHost.addTab(mTabHost.newTabSpec("Profile").setIndicator("",profileIcon), ProfileFragment.class,null);
-        mTabHost.addTab(mTabHost.newTabSpec("Dictionary").setIndicator("",dictionaryIcon),DictionaryFragment.class,null);
+        ImageView iconV1 = (ImageView) v1.findViewById(R.id.image_indicator);
+        iconV1.setImageResource(R.drawable.ic_face_black_24dp);
+        ImageView iconV2 = (ImageView) v2.findViewById(R.id.image_indicator);
+        iconV2.setImageResource(R.drawable.ic_search_black_24dp);
+
+        mTabHost.addTab(mTabHost.newTabSpec("Learn").setIndicator(v0),LearnFragment.class,null);
+        mTabHost.addTab(mTabHost.newTabSpec("Profile").setIndicator(v1), ProfileFragment.class,null);
+        mTabHost.addTab(mTabHost.newTabSpec("Dictionary").setIndicator(v2),DictionaryFragment.class,null);
         mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
                 toolbarTitle.setText(mTabHost.getCurrentTabTag());
+                initTab();
+                ImageView image = (ImageView) mTabHost.getCurrentTabView().findViewById(R.id.image_indicator);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                    image.setColorFilter(getColor(R.color.marker_white));
+                }
+                else{
+                    image.setColorFilter(getResources().getColor(R.color.marker_white));
+                }
                 mTabHost.clearFocus();
             }
         });
 
+    }
+
+    private void initTab(){
+        ImageView iconV0 = (ImageView) mTabHost.getTabWidget().getChildAt(0).findViewById(R.id.image_indicator);
+        ImageView iconV1 = (ImageView) mTabHost.getTabWidget().getChildAt(1).findViewById(R.id.image_indicator);
+        ImageView iconV2 = (ImageView) mTabHost.getTabWidget().getChildAt(2).findViewById(R.id.image_indicator);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            iconV0.setColorFilter(getColor(R.color.black));
+            iconV1.setColorFilter(getColor(R.color.black));
+            iconV2.setColorFilter(getColor(R.color.black));
+        }
+        else{
+            iconV0.setColorFilter(getResources().getColor(R.color.black));
+            iconV1.setColorFilter(getResources().getColor(R.color.black));
+            iconV2.setColorFilter(getResources().getColor(R.color.black));
+        }
     }
 }
