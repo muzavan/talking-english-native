@@ -39,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
+        android:id="@+id/image_lip"
         android:src="@drawable/sign_button"/>
 
     <ImageView

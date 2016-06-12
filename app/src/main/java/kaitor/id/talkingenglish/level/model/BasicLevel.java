@@ -1,18 +1,43 @@
 package kaitor.id.talkingenglish.level.model;
 
-import android.os.Parcel;
-
 /**
  * Created by user pc on 5/30/2016.
  */
-public class BasicLevel extends BaseLevel {
-    @Override
-    public int describeContents() {
-        return 0;
+public class BasicLevel {
+    private String word; // English word
+    private String type; // Noun, verb, anything
+    private String lip; // Resource Name for Lips Reading
+    private String translation;
+
+    public String getTranslation() {
+        return translation;
     }
 
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
+    public void setTranslation(String translation) {
+        this.translation = translation;
+    }
 
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getLip() {
+        return lip;
+    }
+
+    public void setLip(String lip) {
+        this.lip = lip;
     }
 }

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import kaitor.id.talkingenglish.level.fragment.BasicFragment;
 import kaitor.id.talkingenglish.level.fragment.BlankFragment;
 import kaitor.id.talkingenglish.level.fragment.DialogueFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
@@ -74,6 +75,8 @@ public class LevelActivity extends FragmentActivity {
 
     public void initLevels(){
         //TODO : to-be-defined, take from JSON, init using Fragment class
+        LevelFragment frag0 = new BasicFragment();
+        levels.add(frag0);
         LevelFragment frag = new MultipleFragment();
         levels.add(frag);
         LevelFragment frag1 = new BlankFragment();
