@@ -9,8 +9,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class ChooseActivity extends AppCompatActivity {
+public class ChooseActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +59,18 @@ public class ChooseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView imgView2 = (ImageView) findViewById(R.id.image_level_2);
+        ImageView imgView3 = (ImageView) findViewById(R.id.image_level_3);
+        ImageView imgView4 = (ImageView) findViewById(R.id.image_level_4);
+
+        imgView2.setOnClickListener(this);
+        imgView3.setOnClickListener(this);
+        imgView4.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Toast.makeText(getBaseContext(),"Coming Soon :-) ",Toast.LENGTH_SHORT).show();
     }
 }
