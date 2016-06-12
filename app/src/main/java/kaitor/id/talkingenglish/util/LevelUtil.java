@@ -20,9 +20,9 @@ import kaitor.id.talkingenglish.level.model.TypingLevel;
  */
 public class LevelUtil {
     private ArrayList<LevelFragment> levels = new ArrayList<>();
-    public static String[] BEGINNER_LEVELS = new String[]{"home","kitchen","food","vegetables"};
-    public static String[] INTERMEDIATE_LEVELS = new String[]{"school","cat","bus","sport"};
-    public static String[] ADVANCED_LEVELS = new String[]{"supermarket","computer","disaster","kitchen"};
+    public static String[] BEGINNER_LEVELS = new String[]{"home","fruits","number","family"};
+    public static String[] INTERMEDIATE_LEVELS = new String[]{"school","transportation","library","hobbies"};
+    public static String[] ADVANCED_LEVELS = new String[]{"supermarket","factory","traffic","hospital"};
 
     public LevelUtil(String topic){
         if(topic.equalsIgnoreCase("home")){

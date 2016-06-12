@@ -21,8 +21,12 @@ public class ProgressUtil {
 
     public void setTopic(String topic){
         SharedPreferences.Editor editor = mSharedPreferences.edit();
-        editor.putBoolean(topic,true);
+        editor.putBoolean(topic.toLowerCase(),true);
         editor.commit();
+    }
+
+    public boolean getTopicStatus(String topic){
+        return (mSharedPreferences.contains(topic) && mSharedPreferences.getBoolean(topic,false));
     }
 
     public float getBeginner(){

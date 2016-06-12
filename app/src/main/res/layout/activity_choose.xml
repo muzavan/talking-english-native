@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/food"
+                    android:src="@drawable/home"
                     />
 
                 <TextView
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Food"
+                    android:text="Home"
                     android:textColor="@color/green_beginner"
                     android:textSize="@dimen/h4_welcome_text"
                     />
@@ -91,6 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:alpha="0.5"
                 android:orientation="vertical">
 
                 <ImageView
@@ -98,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="centerInside"
-                    android:src="@drawable/kitchen"
+                    android:src="@drawable/fruits"
                     />
 
                 <TextView
@@ -106,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Kitchen"
+                    android:text="Fruits"
                     android:textColor="@color/green_beginner"
                     android:textSize="@dimen/h4_welcome_text"
                     />
@@ -126,6 +127,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:alpha="0.5"
                 android:orientation="vertical">
 
                 <ImageView
@@ -133,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/food"
+                    android:src="@drawable/numbers"
                     />
 
                 <TextView
@@ -141,7 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Food"
+                    android:text="Number"
                     android:textColor="@color/green_beginner"
                     android:textSize="@dimen/h4_welcome_text"
                     />
@@ -151,6 +153,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:alpha="0.5"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -159,7 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="centerInside"
-                    android:src="@drawable/kitchen"
+                    android:src="@drawable/family"
                     />
 
                 <TextView
@@ -167,7 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Kitchen"
+                    android:text="Family"
                     android:textColor="@color/green_beginner"
                     android:textSize="@dimen/h4_welcome_text"
                     />

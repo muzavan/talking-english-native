@@ -1,6 +1,7 @@
 package kaitor.id.talkingenglish;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,6 +27,7 @@ import kaitor.id.talkingenglish.level.fragment.MultipleTextFragment;
 import kaitor.id.talkingenglish.level.fragment.TextFragment;
 import kaitor.id.talkingenglish.level.fragment.TypingFragment;
 import kaitor.id.talkingenglish.util.ProfileUtil;
+import kaitor.id.talkingenglish.util.ProgressUtil;
 
 public class LevelActivity extends FragmentActivity {
     FragmentManager fragmentManager;
@@ -128,15 +131,28 @@ public class LevelActivity extends FragmentActivity {
         } else {
             ProfileUtil util = new ProfileUtil(getBaseContext());
             int currentScore = Integer.valueOf(tvScore.getText().toString());
+
             util.setScore(util.getScore() + currentScore);
-            finish();
+            ProgressUtil progressUtil = new ProgressUtil(getBaseContext());
+            if(progressUtil.getTopicStatus(topic)){
+                Toast.makeText(getBaseContext(),"Great!\nCheckout your new score in Profile",Toast.LENGTH_SHORT).show();
+            }
+            else{
+                progressUtil.setTopic(topic);
+                Intent intent = new Intent(this,FinishActivity.class);
+                intent.putExtra("score",currentScore);
+                intent.putExtra("topic",topic);
+                startActivity(intent);
+                finish();
+            }
         }
     }
 
     @Override
     public void onBackPressed() {
         AlertDialog dialog = new AlertDialog.Builder(getBaseContext())
-                .setMessage("Are you sure to quit?")
+                .setTitle("Confirmation")
+                .setMessage("Are you sure to quit? Your current progress on this topic will be discarded.")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {

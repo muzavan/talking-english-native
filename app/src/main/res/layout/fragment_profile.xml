@@ -82,25 +82,29 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/hiking"/>
+                    android:id="@+id/image_home"
+                    android:src="@drawable/home_badge_black"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/image_fruits"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/fruits_badge_black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/search"/>
+                    android:id="@+id/image_number"
+                    android:src="@drawable/number_badge_black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/talentshow"/>
-
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/campcounselor"/>
+                    android:id="@+id/image_family"
+                    android:src="@drawable/family_badge_black"/>
 
 
             </LinearLayout>
@@ -115,25 +119,66 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/writehome"/>
+                    android:id="@+id/image_school"
+                    android:src="@drawable/school_badge_black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/campfirestories_black"/>
+                    android:id="@+id/image_transportation"
+                    android:src="@drawable/transportation_badge_black"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/image_library"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/library_badge_black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/sleep_black"/>
+                    android:id="@+id/image_hobbies"
+                    android:src="@drawable/hobbies_badge_black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/image_supermarket"
+                    android:src="@drawable/supermarket_badge_black"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/writehome2_black"/>
+                    android:id="@+id/image_factory"
+                    android:src="@drawable/factory_badge_black"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/image_traffic"
+                    android:src="@drawable/traffic_badge_black"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/image_hospital"
+                    android:src="@drawable/hospital_badge_black"/>
 
 
             </LinearLayout>

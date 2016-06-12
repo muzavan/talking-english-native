@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import kaitor.id.talkingenglish.util.ProfileUtil;
  */
 public class ProfileFragment extends Fragment {
     private TextView tvScore;
+    private ImageView imageHome,imageFruits,imageNumber,imageFamily,imageSchool,imageTransportation,imageLibrary,imageHobbies, imageSupermarket, imageFactory, imageHospital, imageTraffic;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -50,6 +52,26 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+
+        //Beginner
+        imageHome = (ImageView) view.findViewById(R.id.image_home);
+        imageFruits = (ImageView) view.findViewById(R.id.image_fruits);
+        imageNumber = (ImageView) view.findViewById(R.id.image_number);
+        imageFamily = (ImageView) view.findViewById(R.id.image_family);
+
+        //Intermediate
+        imageSchool = (ImageView) view.findViewById(R.id.image_school);
+        imageTransportation = (ImageView) view.findViewById(R.id.image_transportation);
+        imageLibrary = (ImageView) view.findViewById(R.id.image_library);
+        imageHobbies = (ImageView) view.findViewById(R.id.image_hobbies);
+
+        //Advanced
+        imageSupermarket = (ImageView) view.findViewById(R.id.image_supermarket);
+        imageFactory = (ImageView) view.findViewById(R.id.image_factory);
+        imageTraffic = (ImageView) view.findViewById(R.id.image_traffic);
+        imageHospital = (ImageView) view.findViewById(R.id.image_hospital);
+
+
         tvScore = (TextView) view.findViewById(R.id.tv_score);
         tvScore.setText(util.getScore()+"");
         return view;
@@ -61,4 +83,5 @@ public class ProfileFragment extends Fragment {
         ProfileUtil util = new ProfileUtil(getContext());
         tvScore.setText(util.getScore()+"");
     }
+
 }
