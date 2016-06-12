@@ -18,6 +18,16 @@ public class TextFragment extends LevelFragment {
     private TextLevel actualLevel;
     private boolean helpShown = false;
 
+    public TextFragment(){
+        super();
+        initDummy();
+    }
+
+    public void initDummy(){
+        actualLevel = new TextLevel();
+        actualLevel.setText("This is an example of a text that will be used as a comprehensive text.");
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
