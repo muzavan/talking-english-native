@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.android.support:design:23.0.1'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.16'
+    compile 'org.jetbrains:annotations-java5:15.0'
 }

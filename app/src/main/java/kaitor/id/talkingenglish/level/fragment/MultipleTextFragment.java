@@ -2,7 +2,6 @@ package kaitor.id.talkingenglish.level.fragment;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,6 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.util.logging.Level;
