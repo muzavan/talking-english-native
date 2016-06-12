@@ -16,7 +16,7 @@
         android:textColor="@color/white"
         android:text="I Understand"
         android:gravity="center_horizontal"
-        android:textSize="@dimen/h4_welcome_text"
+        android:textSize="@dimen/h1_welcome_text"
 
         />
 

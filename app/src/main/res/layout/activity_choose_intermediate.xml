@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="centerInside"
-                    android:src="@drawable/cat"
+                    android:src="@drawable/bus"
                     />
 
                 <TextView
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Cat"
+                    android:text="Transportation"
                     android:textColor="@color/orange_intermediate"
                     android:textSize="@dimen/h4_welcome_text"
                     />
@@ -135,7 +135,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/bus"
+                    android:src="@drawable/library"
                     />
 
                 <TextView
@@ -143,7 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Bus"
+                    android:text="Library"
                     android:textColor="@color/orange_intermediate"
                     android:textSize="@dimen/h4_welcome_text"
                     />
@@ -162,7 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="centerInside"
-                    android:src="@drawable/sport"
+                    android:src="@drawable/hobby"
                     />
 
                 <TextView
@@ -170,7 +170,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Sport"
+                    android:text="Hobbies"
                     android:textColor="@color/orange_intermediate"
                     android:textSize="@dimen/h4_welcome_text"
                     />

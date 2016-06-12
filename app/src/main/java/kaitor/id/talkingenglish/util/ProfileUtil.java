@@ -3,6 +3,9 @@ package kaitor.id.talkingenglish.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by user pc on 5/27/2016.
  */
@@ -15,6 +18,7 @@ public class ProfileUtil {
     public ProfileUtil(Context ctx){
         mSharedPreferences = ctx.getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE);
     }
+
 
     public void setName(String name){
         SharedPreferences.Editor editor = mSharedPreferences.edit();
