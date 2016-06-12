@@ -33,6 +33,20 @@ public class TypingFragment extends LevelFragment {
         dummyData();
     }
 
+    public static TypingFragment newInstance(TypingLevel level) {
+
+        Bundle args = new Bundle();
+
+        TypingFragment fragment = new TypingFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(TypingLevel level){
+        actualLevel = level;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

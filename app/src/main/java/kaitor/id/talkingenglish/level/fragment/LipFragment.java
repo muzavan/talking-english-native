@@ -37,6 +37,20 @@ public class LipFragment extends LevelFragment {
         dummyData();
     }
 
+    public static LipFragment newInstance(LipLevel level) {
+
+        Bundle args = new Bundle();
+
+        LipFragment fragment = new LipFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(LipLevel level){
+        actualLevel = level;
+    }
+
     public void dummyData() {
         actualLevel = new LipLevel();
         actualLevel.setAnswerIndex(1);

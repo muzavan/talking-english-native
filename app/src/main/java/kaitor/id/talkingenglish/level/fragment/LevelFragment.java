@@ -10,4 +10,5 @@ import kaitor.id.talkingenglish.level.model.BaseLevel;
  */
 public abstract class LevelFragment extends Fragment {
     // TODO : To Be Defined Later
+
 }

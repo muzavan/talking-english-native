@@ -19,6 +19,7 @@ import java.io.IOException;
 
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
+import kaitor.id.talkingenglish.level.model.BasicLevel;
 import kaitor.id.talkingenglish.level.model.BlankLevel;
 import pl.droidsonroids.gif.GifDrawable;
 
@@ -34,6 +35,17 @@ public class BlankFragment extends LevelFragment {
     public BlankFragment(){
 
         dummyData();
+    }
+
+    public static BlankFragment newInstance(BlankLevel level) {
+        Bundle args = new Bundle();
+        BlankFragment fragment = new BlankFragment();
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(BlankLevel level){
+        actualLevel = level;
     }
 
     public void dummyData(){

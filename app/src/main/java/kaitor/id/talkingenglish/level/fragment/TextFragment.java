@@ -29,6 +29,20 @@ public class TextFragment extends LevelFragment {
         actualLevel.setText("This is an example of a text that will be used as a comprehensive text.");
     }
 
+    public static TextFragment newInstance(TextLevel level) {
+
+        Bundle args = new Bundle();
+
+        TextFragment fragment = new TextFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(TextLevel level){
+        actualLevel = level;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

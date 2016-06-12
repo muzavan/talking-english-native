@@ -33,6 +33,21 @@ public class MultipleFragment extends LevelFragment {
         dummyData();
     }
 
+    public static MultipleFragment newInstance(MultipleLevel level) {
+
+        Bundle args = new Bundle();
+
+        MultipleFragment fragment = new MultipleFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(MultipleLevel level){
+
+    }
+
+
     public void dummyData() {
         actualLevel = new MultipleLevel();
         actualLevel.setAnswerIndex(2);

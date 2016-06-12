@@ -40,6 +40,20 @@ public class MultipleTextFragment extends LevelFragment {
         dummyData();
     }
 
+    public static MultipleTextFragment newInstance(MultipleTextLevel level) {
+
+        Bundle args = new Bundle();
+
+        MultipleTextFragment fragment = new MultipleTextFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(MultipleTextLevel level){
+        actualLevel = level;
+    }
+
     public void dummyData() {
         actualLevel = new MultipleTextLevel();
         actualLevel.setAnswerIndex(1);

@@ -35,6 +35,20 @@ public class DialogueFragment extends LevelFragment {
         initDummy();
     }
 
+    public static DialogueFragment newInstance(DialogueLevel level) {
+
+        Bundle args = new Bundle();
+
+        DialogueFragment fragment = new DialogueFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(DialogueLevel level){
+        actualLevel = level;
+    }
+
     public void initDummy(){
         actualLevel = new DialogueLevel();
         actualLevel.setDialogues(new String[]{"Joshua:\nHello Kaito!","Kaito:\nHello Joshua!"});

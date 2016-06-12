@@ -32,10 +32,15 @@ public class BasicFragment extends LevelFragment{
         initDummy();
     }
 
-    public BasicFragment(BasicLevel _actualLevel){
-        super();
-        actualLevel=_actualLevel;
+    public static BasicFragment newInstance(BasicLevel level) {
+        Bundle args = new Bundle();
+        BasicFragment fragment = new BasicFragment();
+        fragment.setLevel(level);
+        return fragment;
+    }
 
+    public void setLevel(BasicLevel level){
+        actualLevel = level;
     }
 
     public void initDummy(){
@@ -110,6 +115,7 @@ public class BasicFragment extends LevelFragment{
             }
         });
     }
+
 
 
 }

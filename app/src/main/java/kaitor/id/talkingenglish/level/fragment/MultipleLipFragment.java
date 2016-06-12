@@ -45,6 +45,19 @@ public class MultipleLipFragment extends LevelFragment{
         actualLevel.setImageAnswers(new String[]{"gif/example.gif", "gif/example.gif", "gif/example.gif", "gif/example.gif"});
     }
 
+    public static MultipleLipFragment newInstance(MultipleLipLevel level) {
+
+        Bundle args = new Bundle();
+        MultipleLipFragment fragment = new MultipleLipFragment();
+        fragment.setArguments(args);
+        fragment.setLevel(level);
+        return fragment;
+    }
+
+    public void setLevel(MultipleLipLevel level){
+        actualLevel = level;
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -1,6 +1,7 @@
 package kaitor.id.talkingenglish;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -54,6 +55,15 @@ public class LevelActivity extends FragmentActivity {
         progressBar.setMax(maxLevel);
         tvScore.setText(""+0);
         buttonNext = (Button) findViewById(R.id.button_next);
+        TextView tvExit = (TextView) findViewById(R.id.tv_exit);
+        tvExit.setTextColor(Color.BLACK);
+        tvExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
 
         fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.main_content,levels.get(0)).commit();
