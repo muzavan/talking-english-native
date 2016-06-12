@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -48,6 +49,9 @@ public class ReadyFragment extends Fragment {
                 }
             }
         });
+        TextView tvReady = (TextView) view.findViewById(R.id.tv_ready);
+        Typeface typef = Typeface.createFromAsset(getContext().getAssets(),"font/Moon Flower Bold.ttf");
+        tvReady.setTypeface(typef);
         return view;
     }
 

@@ -1,6 +1,7 @@
 package kaitor.id.talkingenglish;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -67,6 +68,10 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
         imgView2.setOnClickListener(this);
         imgView3.setOnClickListener(this);
         imgView4.setOnClickListener(this);
+
+        TextView tvChoose = (TextView) findViewById(R.id.tv_choose);
+        Typeface typef = Typeface.createFromAsset(getAssets(),"font/Moon Flower Bold.ttf");
+        tvChoose.setTypeface(typef);
     }
 
     @Override

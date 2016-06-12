@@ -1,9 +1,11 @@
 package kaitor.id.talkingenglish;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -16,16 +18,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import kaitor.id.talkingenglish.level.fragment.BasicFragment;
-import kaitor.id.talkingenglish.level.fragment.BlankFragment;
-import kaitor.id.talkingenglish.level.fragment.DialogueFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
-import kaitor.id.talkingenglish.level.fragment.LipFragment;
-import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
-import kaitor.id.talkingenglish.level.fragment.MultipleLipFragment;
-import kaitor.id.talkingenglish.level.fragment.MultipleTextFragment;
-import kaitor.id.talkingenglish.level.fragment.TextFragment;
-import kaitor.id.talkingenglish.level.fragment.TypingFragment;
 import kaitor.id.talkingenglish.util.LevelUtil;
 import kaitor.id.talkingenglish.util.ProfileUtil;
 import kaitor.id.talkingenglish.util.ProgressUtil;
@@ -92,24 +85,6 @@ public class LevelActivity extends FragmentActivity {
     public void initLevels() {
             LevelUtil util = new LevelUtil(topic);
             levels.addAll(util.getLevels());
-//        LevelFragment frag0 = new BasicFragment();
-//        levels.add(frag0);
-//        LevelFragment frag = new MultipleFragment();
-//        levels.add(frag);
-//        LevelFragment frag1 = new BlankFragment();
-//        levels.add(frag1);
-//        LevelFragment frag2 = new TypingFragment();
-//        levels.add(frag2);
-//        LevelFragment frag3 = new LipFragment();
-//        levels.add(frag3);
-//        LevelFragment frag4 = new MultipleLipFragment();
-//        levels.add(frag4);
-//        LevelFragment frag5 = new DialogueFragment();
-//        levels.add(frag5);
-//        LevelFragment frag6 = new TextFragment();
-//        levels.add(frag6);
-//        LevelFragment frag7 = new MultipleTextFragment();
-//        levels.add(frag7);
     }
 
     public void setButtonText(String text) {
@@ -149,21 +124,38 @@ public class LevelActivity extends FragmentActivity {
 
     @Override
     public void onBackPressed() {
-        AlertDialog dialog = new AlertDialog.Builder(getBaseContext())
-                .setTitle("Confirmation")
-                .setMessage("Are you sure to quit? Your current progress on this topic will be discarded.")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        LevelActivity.super.onBackPressed();
-                    }
-                })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick (DialogInterface dialog,int which){
-                        dialog.dismiss();
-                    }
-                })
-                .create();
+        DialogFragment newFragment = ConfirmDialogFragment.newInstance();
+        newFragment.show(getSupportFragmentManager(),"title");
+    }
+
+    public static class ConfirmDialogFragment extends DialogFragment {
+
+        public static ConfirmDialogFragment newInstance() {
+            ConfirmDialogFragment frag = new ConfirmDialogFragment();
+            Bundle args = new Bundle();
+            frag.setArguments(args);
+            return frag;
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+
+            return new AlertDialog.Builder(getContext())
+                    .setTitle("Confirmation")
+                    .setMessage("Are you sure to quit? Your current progress on this topic will be discarded.")
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            getActivity().finish();
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick (DialogInterface dialog,int which){
+                            dialog.dismiss();
+                        }
+                    })
+                    .create();
+        }
     }
 }

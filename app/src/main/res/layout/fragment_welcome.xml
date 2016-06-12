@@ -9,6 +9,7 @@
         android:layout_marginTop="@dimen/fragment_welcome_top"
         android:layout_marginBottom="@dimen/fragment_welcome_bottom"
         android:text="@string/welcome"
+        android:id="@+id/tv_welcome"
         android:textSize="@dimen/h1_welcome_text"
         android:gravity="center"
         android:textColor="#fff"

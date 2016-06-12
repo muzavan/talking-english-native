@@ -42,6 +42,7 @@
             android:layout_marginBottom="4dp"
             android:gravity="center_horizontal"
             android:text="CHOOSE THE TOPIC"
+            android:id="@+id/tv_choose"
             android:textColor="@color/red_advanced"
             android:textSize="@dimen/h4_welcome_text"/>
 

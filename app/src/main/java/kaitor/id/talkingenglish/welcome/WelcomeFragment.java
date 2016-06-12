@@ -1,5 +1,6 @@
 package kaitor.id.talkingenglish.welcome;
 
+import android.graphics.Typeface;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,6 +25,9 @@ public class WelcomeFragment extends Fragment {
         TextView tvWelcomeCaption = (TextView) view.findViewById(R.id.tv_welcome_caption);
         ImageView imageWelcome = (ImageView) view.findViewById(R.id.image_welcome);
         TextView tvWelcomeDetails = (TextView) view.findViewById(R.id.id_welcome_details);
+        TextView tvWelcome = (TextView) view.findViewById(R.id.tv_welcome);
+        Typeface typef = Typeface.createFromAsset(getContext().getAssets(),"font/Moon Flower Bold.ttf");
+        tvWelcome.setTypeface(typef);
 
         if(type == 0){
             tvWelcomeCaption.setText(getResources().getString(R.string.welcome_caption_0));
