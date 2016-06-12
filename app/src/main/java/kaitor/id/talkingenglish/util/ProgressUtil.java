@@ -3,6 +3,8 @@ package kaitor.id.talkingenglish.util;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import kaitor.id.talkingenglish.level.fragment.LevelFragment;
+
 /**
  * Created by user pc on 5/30/2016.
  */
@@ -17,33 +19,39 @@ public class ProgressUtil {
         mSharedPreferences = ctx.getSharedPreferences(PREF_NAME,Context.MODE_PRIVATE);
     }
 
-    public void setBeginner(int progress){
+    public void setTopic(String topic){
         SharedPreferences.Editor editor = mSharedPreferences.edit();
-        editor.putInt(KEY_BEGINNER,progress);
+        editor.putBoolean(topic,true);
         editor.commit();
     }
 
-    public void setIntermediate(int progress){
-        SharedPreferences.Editor editor = mSharedPreferences.edit();
-        editor.putInt(KEY_INTERMEDIATE,progress);
-        editor.commit();
+    public float getBeginner(){
+        int count = 0;
+        for (String t : LevelUtil.BEGINNER_LEVELS){
+            if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
+                count++;
+            }
+        }
+        return (float)count/(float) LevelUtil.BEGINNER_LEVELS.length;
     }
 
-    public void setAdvanced(int progress){
-        SharedPreferences.Editor editor = mSharedPreferences.edit();
-        editor.putInt(KEY_ADVANCED,progress);
-        editor.commit();
+    public float getIntermediate(){
+        int count = 0;
+        for (String t : LevelUtil.INTERMEDIATE_LEVELS){
+            if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
+                count++;
+            }
+        }
+        return (float)count/(float) LevelUtil.INTERMEDIATE_LEVELS.length;
     }
 
-    public int getBeginner(){
-        return mSharedPreferences.getInt(KEY_BEGINNER,0);
-    }
-
-    public int getIntermediate(){
-        return mSharedPreferences.getInt(KEY_INTERMEDIATE,0);
-    }
-
-    public int getAdvanced(){
-        return mSharedPreferences.getInt(KEY_ADVANCED,0);
+    public float getAdvanced(){
+        int count = 0;
+        for (String t : LevelUtil.ADVANCED_LEVELS){
+            if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
+                count++;
+            }
+        }
+        return (float)count/(float) LevelUtil.ADVANCED_LEVELS.length;
     }
 }
