@@ -32,6 +32,12 @@ public class BasicFragment extends LevelFragment{
         initDummy();
     }
 
+    public BasicFragment(BasicLevel _actualLevel){
+        super();
+        actualLevel=_actualLevel;
+
+    }
+
     public void initDummy(){
         actualLevel = new BasicLevel();
         actualLevel.setType("(n) kata benda");

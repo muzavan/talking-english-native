@@ -22,6 +22,7 @@ import kaitor.id.talkingenglish.level.fragment.MultipleLipFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleTextFragment;
 import kaitor.id.talkingenglish.level.fragment.TextFragment;
 import kaitor.id.talkingenglish.level.fragment.TypingFragment;
+import kaitor.id.talkingenglish.level.model.BasicLevel;
 import kaitor.id.talkingenglish.util.ProfileUtil;
 
 public class LevelActivity extends FragmentActivity {
@@ -76,6 +77,7 @@ public class LevelActivity extends FragmentActivity {
 
     public void initLevels(){
         //TODO : to-be-defined, take from JSON, init using Fragment class
+
         LevelFragment frag0 = new BasicFragment();
         levels.add(frag0);
         LevelFragment frag = new MultipleFragment();
