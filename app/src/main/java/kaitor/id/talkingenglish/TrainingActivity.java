@@ -13,6 +13,9 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
 
+import kaitor.id.talkingenglish.training.TrainingBadgeFragment;
+import kaitor.id.talkingenglish.training.TrainingLegendFragment;
+import kaitor.id.talkingenglish.training.TrainingUnderstandFragment;
 import kaitor.id.talkingenglish.util.ProfileUtil;
 import kaitor.id.talkingenglish.welcome.ReadyFragment;
 import kaitor.id.talkingenglish.welcome.WelcomeFragment;
@@ -22,6 +25,7 @@ public class TrainingActivity extends FragmentActivity {
      * The number of pages (wizard steps) to show in this demo.
      */
     private static final int NUM_PAGES = 3;
+    private String topic = "family";
 
     /**
      * The pager widget, which handles animation and allows swiping horizontally to access previous
@@ -41,6 +45,8 @@ public class TrainingActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         checkLogin();
         setContentView(R.layout.activity_welcome);
+
+        topic = getIntent().getExtras().getString("topic",topic);
 
         // Instantiate a ViewPager and a PagerAdapter.
         mPager = (ViewPager) findViewById(R.id.pager);
@@ -155,11 +161,17 @@ public class TrainingActivity extends FragmentActivity {
         @Override
         public Fragment getItem(int position) {
             Fragment fragment;
-            if (position < 2) {
-                fragment = WelcomeFragment.newInstance(position);
-            } else {
-                fragment = ReadyFragment.newInstance();
-            }
+            switch(position){
+					case 0 :
+                        fragment = new TrainingBadgeFragment();
+						break;
+					case 1 : 
+						fragment = new TrainingLegendFragment();
+						break;
+					default :
+						fragment = TrainingUnderstandFragment.newInstance(topic);
+						break;
+			}
             return fragment;
         }
 
