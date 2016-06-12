@@ -1,20 +1,26 @@
 package kaitor.id.talkingenglish.level.fragment;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
 import java.util.logging.Level;
 
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.level.model.LipLevel;
 import kaitor.id.talkingenglish.level.model.MultipleTextLevel;
+import pl.droidsonroids.gif.GifDrawable;
 
 /**
  * Created by user pc on 6/12/2016.
@@ -40,6 +46,7 @@ public class MultipleTextFragment extends LevelFragment {
         actualLevel.setWord("Extravagant");
         actualLevel.setType("(adj) kata sifat");
         actualLevel.setAnswers(new String[]{"Rich","Cheap","Necessary","Expensive"});
+        actualLevel.setHand("gif/example.gif");
     }
 
     @Nullable
@@ -54,6 +61,32 @@ public class MultipleTextFragment extends LevelFragment {
         tvAnswer2 = (TextView) view.findViewById(R.id.tv_answer_2);
         tvAnswer3 = (TextView) view.findViewById(R.id.tv_answer_3);
         tvAnswer0 = (TextView) view.findViewById(R.id.tv_answer_0);
+        ImageView imageSign = (ImageView) view.findViewById(R.id.image_sign);
+        imageSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View alert = View.inflate(getContext(),R.layout.sign_layout,null);
+                ImageView gifSign = (ImageView) alert.findViewById(R.id.gif_sign);
+
+                try {
+                    GifDrawable gifFromAssets = new GifDrawable(getContext().getAssets(), actualLevel.getHand());
+                    gifSign.setImageDrawable(gifFromAssets);
+                } catch (IOException e) {
+                    Log.d("GIF","Gagal");
+                    e.printStackTrace();
+                }
+
+                AlertDialog dialog = new AlertDialog.Builder(getContext())
+                        .setView(alert)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        }).create();
+                dialog.show();
+            }
+        });
 
         tvWord.setText(actualLevel.getWord());
         tvType.setText(actualLevel.getType());

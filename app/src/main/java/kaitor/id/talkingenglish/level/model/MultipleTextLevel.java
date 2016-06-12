@@ -41,4 +41,12 @@ public class MultipleTextLevel {
     public void setAnswerIndex(int answerIndex) {
         this.answerIndex = answerIndex;
     }
+
+    public String getHand() {
+        return hand;
+    }
+
+    public void setHand(String hand) {
+        this.hand = hand;
+    }
 }
