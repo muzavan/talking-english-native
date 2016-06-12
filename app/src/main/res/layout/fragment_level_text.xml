@@ -39,6 +39,7 @@
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/tv_text"
+        android:layout_marginTop="30dp"
         android:textSize="@dimen/p_welcome_text"
         android:textColor="@color/green_beginner"
         android:text="This is an example text"
