@@ -7,6 +7,8 @@ public class MultipleTextLevel {
     private String word;
     private String type;
     private String hand;
+    private String question;
+    private String translatedQuestion;
     private String[] answers;
     private int answerIndex;
 
@@ -48,5 +50,21 @@ public class MultipleTextLevel {
 
     public void setHand(String hand) {
         this.hand = hand;
+    }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public String getTranslatedQuestion() {
+        return translatedQuestion;
+    }
+
+    public void setTranslatedQuestion(String translatedQuestion) {
+        this.translatedQuestion = translatedQuestion;
     }
 }

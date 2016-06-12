@@ -1,0 +1,10 @@
+01:22:00.617 [ERROR] [org.gradle.api.Task] AAPT err(Facade for 602908798): libpng error: Not a PNG file
+01:22:01.840 [ERROR] [org.gradle.BuildExceptionReporter] 
+01:22:01.840 [ERROR] [org.gradle.BuildExceptionReporter] FAILURE: Build failed with an exception.
+01:22:01.840 [ERROR] [org.gradle.BuildExceptionReporter] 
+01:22:01.840 [ERROR] [org.gradle.BuildExceptionReporter] * What went wrong:
+01:22:01.841 [ERROR] [org.gradle.BuildExceptionReporter] Execution failed for task ':app:mergeDebugResources'.
+01:22:01.841 [ERROR] [org.gradle.BuildExceptionReporter] > Some file crunching failed, see logs for details
+01:22:01.841 [ERROR] [org.gradle.BuildExceptionReporter] 
+01:22:01.841 [ERROR] [org.gradle.BuildExceptionReporter] * Try:
+01:22:01.841 [ERROR] [org.gradle.BuildExceptionReporter] Run with --stacktrace option to get the stack trace. 

@@ -65,7 +65,7 @@ public class BasicFragment extends LevelFragment{
             GifDrawable gifFromAssets = new GifDrawable(getContext().getAssets(), actualLevel.getLip() );
             imageLip.setImageDrawable(gifFromAssets);
         } catch (IOException e) {
-            Log.d("GIF","Gagal");
+            Log.d("GIF",actualLevel.getLip());
             e.printStackTrace();
         }
 

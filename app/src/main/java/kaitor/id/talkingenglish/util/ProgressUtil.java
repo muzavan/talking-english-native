@@ -26,36 +26,36 @@ public class ProgressUtil {
     }
 
     public boolean getTopicStatus(String topic){
-        return (mSharedPreferences.contains(topic) && mSharedPreferences.getBoolean(topic,false));
+        return (mSharedPreferences.contains(topic.toLowerCase()) && mSharedPreferences.getBoolean(topic.toLowerCase(),false));
     }
 
-    public float getBeginner(){
+    public int getBeginner(){
         int count = 0;
         for (String t : LevelUtil.BEGINNER_LEVELS){
             if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
                 count++;
             }
         }
-        return (float)count/(float) LevelUtil.BEGINNER_LEVELS.length;
+        return count;
     }
 
-    public float getIntermediate(){
+    public int getIntermediate(){
         int count = 0;
         for (String t : LevelUtil.INTERMEDIATE_LEVELS){
             if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
                 count++;
             }
         }
-        return (float)count/(float) LevelUtil.INTERMEDIATE_LEVELS.length;
+        return count;
     }
 
-    public float getAdvanced(){
+    public int getAdvanced(){
         int count = 0;
         for (String t : LevelUtil.ADVANCED_LEVELS){
             if(mSharedPreferences.contains(t) && mSharedPreferences.getBoolean(t,false)){
                 count++;
             }
         }
-        return (float)count/(float) LevelUtil.ADVANCED_LEVELS.length;
+        return count;
     }
 }

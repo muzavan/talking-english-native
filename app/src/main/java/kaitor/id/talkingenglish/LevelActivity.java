@@ -26,6 +26,7 @@ import kaitor.id.talkingenglish.level.fragment.MultipleLipFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleTextFragment;
 import kaitor.id.talkingenglish.level.fragment.TextFragment;
 import kaitor.id.talkingenglish.level.fragment.TypingFragment;
+import kaitor.id.talkingenglish.util.LevelUtil;
 import kaitor.id.talkingenglish.util.ProfileUtil;
 import kaitor.id.talkingenglish.util.ProgressUtil;
 
@@ -86,31 +87,29 @@ public class LevelActivity extends FragmentActivity {
         int currentScore = Integer.valueOf(tvScore.getText().toString());
         currentScore += score;
         tvScore.setText(currentScore + "");
-
-        //TODO : add to profile or score util
     }
 
     public void initLevels() {
-        //TODO : to-be-defined, take from JSON, init using Fragment class
-
-        LevelFragment frag0 = new BasicFragment();
-        levels.add(frag0);
-        LevelFragment frag = new MultipleFragment();
-        levels.add(frag);
-        LevelFragment frag1 = new BlankFragment();
-        levels.add(frag1);
-        LevelFragment frag2 = new TypingFragment();
-        levels.add(frag2);
-        LevelFragment frag3 = new LipFragment();
-        levels.add(frag3);
-        LevelFragment frag4 = new MultipleLipFragment();
-        levels.add(frag4);
-        LevelFragment frag5 = new DialogueFragment();
-        levels.add(frag5);
-        LevelFragment frag6 = new TextFragment();
-        levels.add(frag6);
-        LevelFragment frag7 = new MultipleTextFragment();
-        levels.add(frag7);
+            LevelUtil util = new LevelUtil(topic);
+            levels.addAll(util.getLevels());
+//        LevelFragment frag0 = new BasicFragment();
+//        levels.add(frag0);
+//        LevelFragment frag = new MultipleFragment();
+//        levels.add(frag);
+//        LevelFragment frag1 = new BlankFragment();
+//        levels.add(frag1);
+//        LevelFragment frag2 = new TypingFragment();
+//        levels.add(frag2);
+//        LevelFragment frag3 = new LipFragment();
+//        levels.add(frag3);
+//        LevelFragment frag4 = new MultipleLipFragment();
+//        levels.add(frag4);
+//        LevelFragment frag5 = new DialogueFragment();
+//        levels.add(frag5);
+//        LevelFragment frag6 = new TextFragment();
+//        levels.add(frag6);
+//        LevelFragment frag7 = new MultipleTextFragment();
+//        levels.add(frag7);
     }
 
     public void setButtonText(String text) {
