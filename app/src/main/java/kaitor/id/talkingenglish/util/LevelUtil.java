@@ -550,6 +550,8 @@ public class LevelUtil {
             multipletext1.setWord("Mahal");
             multipletext1.setType("(adjective) kata sifat");
             multipletext1.setHand("gif/mahal.gif");
+            multipletext1.setQuestion("What is the synonym of it?");
+            multipletext1.setTranslatedQuestion("Apa persamaan kata dari kata di atas?");
             multipletext1.setAnswers(new String[]{"Beverage","Bargain","Extravagant","Apparel"});
             multipletext1.setAnswerIndex(2);
 
@@ -574,6 +576,8 @@ public class LevelUtil {
             multipletext2.setWord("Extravagant");
             multipletext2.setType("(adjective) kata sifat");
             multipletext2.setHand("gif/mahal.gif");
+            multipletext2.setQuestion("What is the antonym of it?");
+            multipletext2.setTranslatedQuestion("Apa lawan kata dari kata tersebut?");
             multipletext2.setAnswers(new String[]{"Rich","Cheap","Necessary","Expensive"});
             multipletext2.setAnswerIndex(1);
 
@@ -581,6 +585,8 @@ public class LevelUtil {
             multipletext3.setWord("Perlu");
             multipletext3.setType("(adjective) kata sifat");
             multipletext3.setHand("gif/perlu.gif");
+            multipletext3.setQuestion("What is the English translation of the word?");
+            multipletext3.setTranslatedQuestion("Apa kata Bahasa Inggris dari kata tersebut?");
             multipletext3.setAnswers(new String[]{"Necessary","Extravagant","Bargain","Purchase"});
             multipletext3.setAnswerIndex(0);
 
