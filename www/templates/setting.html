@@ -1,0 +1,22 @@
+<ion-view name="tab-setting" view-title="Settings" hide-tabs='some-bool-expression'>
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon ion-ios-arrow-back" ng-click="goBack()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <ion-list>
+    <ion-toggle class="toggle-positive" ng-model="settings.enableReminder">
+        Remind me
+    </ion-toggle>
+    <div class="item item-button-right">
+    Set time
+      <ionic-timepicker input-obj="timePickerObject">
+        <button class="button button-positive">
+          <i class="ion-android-time"></i>
+        </button>
+      </ionic-timepicker>
+      <p>12.00</p>
+    </div>
+    </ion-list>
+  </ion-content>
+</ion-view>

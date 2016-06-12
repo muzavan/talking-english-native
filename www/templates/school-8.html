@@ -1,0 +1,198 @@
+<ion-view view-title="School" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding" overflow-scroll="true">
+		<div class="row" id="status-bar-level-intermediate">
+			<a class="icon ion-android-close close-button" ng-href="#/tab/intermediate"></a>
+			<progress max="100" value="24.5"></progress>
+		</div>
+		<div class="row">
+			<div id="score-0">
+				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
+					<p>{{value}}</p>
+				</div>
+			</div>
+		</div>
+		<div ng-switch="content">
+      <div class="row" ng-switch-default id="score-1-fam6">
+        <div class="col col-75">
+          <h4>The teacher is _______ on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-switch-when="content-1" id="score-1-fam6a">
+        <div class="col col-75">
+          <h4>The teacher is <u>watching</u> on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-switch-when="content-2" id="score-1-fam6b">
+        <div class="col col-75">
+          <h4>The teacher is <u>reading</u> on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-switch-when="content-3" id="score-1-fam6c">
+        <div class="col col-75">
+          <h4>The teacher is <u>writing</u> on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-switch-when="content-4" id="score-1-fam6d">
+        <div class="col col-75">
+          <h4>The teacher is <u>speaking</u> on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+      <div class="row" ng-switch-when="content-5" id="score-1-fam6e">
+        <div class="col col-75">
+          <h4>The teacher is <u>looking</u> on a whiteboard</h4>
+        </div>
+        <div class="col">
+          <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+            <img src="img/building.png">
+          </button>
+        </div>
+      </div>
+    </div>
+		<div class="sub-word">
+			<h5>Guru itu sedang menulis di papan tulis</h5>
+			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button button-clear"><img src="img/sign-button.png"></button>
+		</div>
+		<div class="sub-word" id="fam-6">
+      <h5>Choose the right word</h5>
+      <div class="row translate-help">
+        <div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+        <div ng-show="showDiv" class="cssSlideUp">
+            <p>Pilih kata yang tepat</p>
+        </div>
+      </div>
+    </div>
+    <div class="row radio-answer" radio-group>
+    <label class="col item item-radio" id="answer-fam6-1">
+      <input type="radio" ng-model="$parent.radioValue" name="choiceId" ng-click="showContent( 1 )" value="watching">
+        <div class="button button-outline button-energized button-small button-switch">watching</div>
+      </input>
+      </label>
+      <label class="col item item-radio" id="answer-fam6-2">
+        <input type="radio" ng-model="$parent.radioValue" name="choiceId" ng-click="showContent( 2 )" value="reading">
+          <div class="button button-outline button-energized button-small button-switch">reading</div>
+        </input>
+      </label>
+      <label class="col item item-radio" id="answer-fam6-3">
+        <input type="radio" ng-model="$parent.radioValue" name="choiceId" ng-click="showContent( 3 )" value="writing">
+          <div class="button button-outline button-energized button-small button-switch">writing</div>
+        </input>
+      </label>
+    </div>
+    <div class="row" radio-group>
+      <label class="col item item-radio" id="answer-fam6-4">
+        <input type="radio" ng-model="$parent.radioValue" name="choiceId" ng-click="showContent( 4 )" value="speaking">
+          <div class="button button-outline button-energized button-small button-switch">speaking</div>
+        </input>
+      </label>
+      <label class="col item item-radio" id="answer-fam6-5">
+        <input type="radio" ng-model="$parent.radioValue" name="choiceId" ng-click="showContent( 5 )" value="looking">
+          <div class="button button-outline button-energized button-small button-switch">looking</div>
+        </input>
+      </label>
+    </div>
+		<div class="button-next">
+			<a class="button button-block button-energized" ng-disabled="!radioValue" ng-click="showSchoolEightAlert()">NEXT  <i class="ion-ios-arrow-forward"></i></a>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding">
+        <div class="close-modal">
+          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
+        </div>
+        <div class="video-sl text-center">
+          <img src="video/guru-sedang-tulis.gif">
+        </div>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-score.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalScore()">
+      			<i class="ion-android-close"></i>
+      		</button>
+      	</div>
+      	<h4 class="text-center">Your score is</h4>
+        <h1 class="text-center">0</h1>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-level.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
+      			<i class="ion-android-close"></i>
+      		</button>
+       	</div>
+       	<img src="img/building.png">
+       	<h5 class="text-center">You are in Intermediate Level</h5>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="popup-template-correct.html" type="text/ng-template">
+  <div class="answer-popup-correct">
+    <div class="icon-correct col text-center">
+      <i class="ion-checkmark-circled"></i>
+    </div>
+    <div class="text-center text-correct">
+      <p>Correct</p>
+    </div>
+    <div class="points-correct text-center">
+      <p>You got <b>+50</b> points!</p>
+    </div>
+  </div>
+</script>
+
+<script id="popup-template-incorrect.html" type="text/ng-template">
+  <div class="answer-popup-incorrect">
+    <div class="icon-incorrect col text-center">
+      <i class="ion-close-circled"></i>
+    </div>
+    <div class="text-center text-incorrect">
+      <p>Incorrect</p>
+    </div>
+    <div class="text-center image-incorrect">
+      Your answer is <b>{{radioValue}}</b>. It should be:<br>
+      <h3>writing</h3>
+    </div>
+  </div>
+</script>

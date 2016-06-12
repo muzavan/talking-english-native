@@ -1,0 +1,14 @@
+<ion-view view-title="Search" on-swipe-right="swipechats()">
+  <ion-content on-swipe-right="swipechats()">
+    <div class="bar bar-header item-input-inset">
+      <input type="text" placeholder=" Look up a word" ng-model="search.name" style="width:100%; padding-left:11px;" />
+    </div>
+    <ion-list>
+      <ion-item type="item-text-wrap" href="#/tab/search/{{search.id}}" ng-repeat="search in searches | filter:search | limitTo:listlength">
+        {{search.name}}
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll ng-if="listlength<=searches.length" on-infinite="loadMore()" distance="3%">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

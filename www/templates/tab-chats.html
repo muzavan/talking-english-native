@@ -1,0 +1,54 @@
+<ion-view view-title="Profile" on-swipe-left="swipesearch()" on-swipe-right="swipedash()">
+  <ion-content class="padding" on-swipe-left="swipesearch()" on-swipe-right="swipedash()">
+    <div class="row">
+      <a class="col col-33 col-offset-33 item item-image" id="avatar-profile">
+        <img src="img/profile.png">
+      </a>
+    </div>
+    <div>
+      <label class="item item-input" id="custom-input">
+        <input type="text" value={{usernameglobal}} placeholder="Your Name" class="text-center" id="custom-placeholder">
+      </label>
+    </div>
+    <button class="button button-block button-energized" id="button-profile"><i class="ion-edit"></i>
+      CHANGE
+    </button>
+    <div class="score">
+      <h5 class="text-center">Your score is<br><br></h5>
+      <div class="show-score text-center">
+        {{value}}
+      </div>
+    </div>
+    <div class="badges-content">
+      <h5>BADGES</h5>
+    </div>
+    <div class="row">
+      <div class="col item item-image" id="circle1">
+        <img src="img/Hiking.png">
+      </div>
+      <div class="col item item-image" id="circle2">
+        <img src="img/Search.png">
+      </div>
+      <div class="col item item-image" id="circle3">
+        <img src="img/TalentShow.png">
+      </div>
+      <div class="col item item-image" id="circle4">
+        <img src="img/CampCounselor.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col item item-image" id="circle5">
+        <img src="img/WriteHome.png">
+      </div>
+      <div class="col item item-image" id="circle6">
+        <img src="img/CampFireStories-black.png">
+      </div>
+      <div class="col item item-image" id="circle7">
+        <img src="img/Sleep-black.png">
+      </div>
+      <div class="col item item-image" id="circle8">
+        <img src="img/WriteHome2-black.png">
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

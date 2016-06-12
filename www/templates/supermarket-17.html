@@ -1,0 +1,84 @@
+<ion-view view-title="Supermarket" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding" overflow-scroll="true">
+		<div class="row" id="status-bar-level-advance">
+			<a class="icon ion-android-close close-button" ng-href="#/tab/advance"></a>
+			<progress max="100" value="56"></progress>
+		</div>
+		<div class="row">
+			<div id="score-0">
+				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
+					<p>{{value}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="score-1">
+      <div class="col col-75">
+        <h3>Necessary</h3>
+      </div>
+			<div class="col">
+        <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+          <img src="img/high-building.png">
+        </button>
+      </div>
+			
+		</div>
+		<div class="sub-word">
+			<h5>Perlu</h5>
+			<p>(adj) kata sifat</p>
+			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button button-clear"><img src="img/sign-button.png"></button>
+		</div>
+		<div data-tap-disable="true" class="lip-reading-vid">
+      <video ng-src="/android_asset/www/video/necessary.mp4" width="310" height="220" controls="" autoplay="" type="video/mp4"></video>
+    </div>
+		<div class="button-next">
+			<a class="button button-block button-assertive" ng-href="#/tab/supermarket-18">NEXT  <i class="ion-ios-arrow-forward"></i></a>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding">
+        <div class="close-modal">
+          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
+        </div>
+        <div class="video-sl text-center">
+          <img src="video/perlu.gif">
+        </div>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-score.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalScore()">
+      			<i class="ion-android-close"></i>
+      		</button>
+      	</div>
+      	<h4 class="text-center">Your score is</h4>
+        <h1 class="text-center">0</h1>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-level.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
+      			<i class="ion-android-close"></i>
+      		</button>
+       	</div>
+       	<img src="img/high-building.png">
+       	<h5 class="text-center">You are in Advance Level</h5>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>

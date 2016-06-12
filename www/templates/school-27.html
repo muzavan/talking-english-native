@@ -1,0 +1,111 @@
+<ion-view view-title="School" hide-nav-bar="true" hide-tabs='some-bool-expression' class="review-school">
+	<ion-content class="padding" scroll="false">
+		<div class="row" id="status-bar-level-intermediate">
+			<a class="icon ion-android-close close-button" ng-href="#/tab/beginner"></a>
+			<progress max="100" value="83.5"></progress>
+		</div>
+		<div class="row">
+			<div id="school-27-teacher" class="row">
+				<div class="col col-offset-50">
+					<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
+						<p>{{value}}</p>
+					</div>
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/building.png">
+					</button>
+				</div>
+			</div>
+		</div>
+		<div ng-switch="content">
+			<div class="row">
+				<div class="col col-50" id="school-27-whiteboard">
+					<input type="checkbox" class="button button-clear" id="whiteboard-review" value="whiteboard" name="whiteboard-review" ng-model="checkValueWhiteboard" onchange="window.location.href='#/tab/school-31'">
+					</input>
+					<label for="whiteboard-review"></label>
+				</div>
+				<div class="col" id="school-27-teacher">
+					<input type="checkbox" class="button button-clear" id="teacher-review" value="teacher" name="teacher-review" ng-model="checkValue" onchange="window.location.href='#/tab/school-28'">
+					</input>
+					<label for="teacher-review"></label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-50" id="school-27-study">
+					<input type="checkbox" class="button button-clear" id="study-review" value="study" name="study-review" ng-model="checkValueStudy" onchange="window.location.href='#/tab/school-30'">
+					</input>
+					<label for="study-review"></label>
+				</div>
+				<div class="col" id="school-27-student">
+					<input type="checkbox" class="button button-clear" id="student-review" value="student" name="student-review" ng-model="checkValueStudent" onchange="window.location.href='#/tab/school-29'">
+					</input>
+					<label for="student-review"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="button-next">
+			<a class="button button-block button-energized" ng-disabled="!checkValue" ng-href="#/tab/school-32">FINISH</a>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal-score.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalScore()">
+      			<i class="ion-android-close"></i>
+      		</button>
+      	</div>
+      	<h4 class="text-center">Your score is</h4>
+        <h1 class="text-center">{{score}}</h1>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-level.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
+      			<i class="ion-android-close"></i>
+      		</button>
+       	</div>
+       	<img src="img/building.png">
+       	<h5 class="text-center">You are in Intermediate Level</h5>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="popup-template-correct.html" type="text/ng-template">
+	<div class="answer-popup-correct">
+		<div class="icon-correct col text-center">
+			<i class="ion-checkmark-circled"></i>
+		</div>
+		<div class="text-center text-correct">
+			<p>Correct</p>
+		</div>
+		<div class="points-correct text-center">
+			<p>You got <b>+50</b> points!</p>
+		</div>
+	</div>
+</script>
+
+<script id="popup-template-incorrect.html" type="text/ng-template">
+	<div class="answer-popup-incorrect">
+		<div class="icon-incorrect col text-center">
+			<i class="ion-close-circled"></i>
+		</div>
+		<div class="text-center text-incorrect">
+			<p>Incorrect</p>
+		</div>
+		<div class="text-center image-incorrect">
+			Your answer is <b>{{radioValue}}</b>. It should be:<br>
+			<h3>Watch</h3>			
+		</div>
+	</div>
+</script>

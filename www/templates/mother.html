@@ -1,0 +1,32 @@
+<ion-view title="Dictionary" hide-tabs='some-bool-expression'>
+	<ion-nav-buttons side="left">
+    <button class="button button-clear icon ion-ios-arrow-back" ng-click="goBack()">
+    </button>
+  </ion-nav-buttons>
+  <ion-content has-header="true" padding="true">
+		<div class="row" id="score-1">
+		<h3>{{search.name}} Mother</h3>
+		<h4>{{search.id}}</h4>
+		<p>{{search.meaning}}</p>
+	</div>
+	<div class="sub-word">
+		<h5>Ibu</h5>
+		<p>(n) kata benda</p>
+		<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
+	</div>
+	<div class="lip-reading-vid">
+		<img src="img/lip-reading1.png">
+	</div>
+  </ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding">
+      	<h3>Video Here</h3>
+        <button class="button button-full button-positive" ng-click="closeModal()">Close Modal</button>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>

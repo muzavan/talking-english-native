@@ -1,0 +1,43 @@
+<ion-view view-title="Beginner" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding content-intro">
+		<ion-slide-box on-slide-changed="slideHasChanged($index)">
+      <ion-slide>
+        <div class="box-first">
+          <div class="row">
+            <a class="col col-33 col-offset-33 item item-image" id="badge-intro">
+              <img src="img/badge.png">
+            </a>
+          </div>
+          <h1 class="text-center title-text">Dapatkan Badge!</h1>
+          <h5 class="text-center">
+            Ini adalah level tentang keluarga.<br>
+            Selesaikan level ini dengan menjawab<br>
+            soal-soal yang ada.<br>
+            Dapatkan "Badge" di akhir level!
+          </h5>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div>
+          <h4 class="text-center text-intro">Penjelasan</h4>
+          <div class="image-intro">
+            <img src="img/page-intro.png">
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box-third">
+          <div class="row">
+            <a class="col col-33 col-offset-33 item item-image" id="like-intro">
+              <img src="img/thumb.png">
+            </a>
+          </div>
+          <h1 class="text-center title-text">Saya mengerti!</h1>
+        </div>
+        <div class="button-next">
+          <a class="button button-block button-stable" ng-href="#/tab/family-1">LET'S START  <i class="ion-ios-arrow-forward"></i></a>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+	</ion-content>
+</ion-view>

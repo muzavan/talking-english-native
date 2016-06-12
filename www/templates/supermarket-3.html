@@ -1,0 +1,140 @@
+<ion-view view-title="Supermarket" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding" overflow-scroll="true">
+		<div class="row" id="status-bar-level-advance">
+			<a class="icon ion-android-close close-button" ng-href="#/tab/advance"></a>
+			<progress max="100" value="10.5"></progress>
+		</div>
+		<div class="row">
+			<div id="score-0">
+				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
+					<p>{{value}}</p>
+				</div>
+			</div>
+		</div>
+    <div class="row" id="score-1-fam2">
+      <div class="col col-offset-75">
+        <button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+          <img src="img/high-building.png">
+        </button>
+      </div>
+    </div>
+    <div class="sub-word" id="fam-2">
+      <h5>Which of these is "purchase"?</h5>
+      <div class="row translate-help">
+        <div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+        <div ng-show="showDiv" class="cssSlideUp">
+          <p>Mana di bawah ini yang merupakan "beli"?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Selectable Answer -->
+    <div>
+      <div class="row" radio-group id="cards-choice-1">
+        <div class="col col-50">
+          <ion-radio class="card" id="card-father-fam2" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="Beverage">
+            <img src="img/beverages.png">
+          </ion-radio>
+        </div>
+        <div class="col col-50">
+          <ion-radio class="card" id="card-son-fam2" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="Purchase">
+            <img src="img/purchase.png">
+          </ion-radio>
+        </div>
+      </div>
+      <div class="row" radio-group>
+        <div class="col col-50">
+          <ion-radio class="card" id="card-mother-fam2" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="Sell">
+            <img src="img/sell.png">
+          </ion-radio>
+        </div>
+        <div class="col col-50">
+          <ion-radio class="card" id="card-daughter-fam2" icon="ion-checkmark" ng-model="$parent.radioValue" name="choiceId" value="Grocery">
+            <img src="img/grocery.png">
+          </ion-radio>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Button -->
+		<div class="button-next">
+			<a class="button button-block button-assertive" ng-disabled="!radioValue" ng-click="showSupermarketThreeAlert()">NEXT  <i class="ion-ios-arrow-forward"></i></a>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding">
+        <div class="close-modal">
+          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
+        </div>
+        <div class="video-sl text-center">
+          <img src="video/ibu_sl.gif">
+        </div>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-score.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalScore()">
+      			<i class="ion-android-close"></i>
+      		</button>
+      	</div>
+      	<h4 class="text-center">Your score is</h4>
+        <h1 class="text-center">0</h1>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-level.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
+      			<i class="ion-android-close"></i>
+      		</button>
+       	</div>
+       	<img src="img/high-building.png">
+       	<h5 class="text-center">You are in Advance Level</h5>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="popup-template-correct.html" type="text/ng-template">
+  <div class="answer-popup-correct">
+    <div class="icon-correct col text-center">
+      <i class="ion-checkmark-circled"></i>
+    </div>
+    <div class="text-center text-correct">
+      <p>Correct</p>
+    </div>
+    <div class="points-correct text-center">
+      <p>You got <b>+50</b> points!</p>
+    </div>
+  </div>
+</script>
+
+<script id="popup-template-incorrect.html" type="text/ng-template">
+  <div class="answer-popup-incorrect">
+    <div class="icon-incorrect col text-center">
+      <i class="ion-close-circled"></i>
+    </div>
+    <div class="text-center text-incorrect">
+      <p>Incorrect</p>
+    </div>
+    <div class="text-center image-incorrect">
+      Your answer is <b>{{radioValue}}</b>. It should be:<br>
+      <img src="img/purchase.png">
+    </div>
+  </div>
+</script>

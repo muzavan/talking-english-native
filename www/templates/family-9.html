@@ -1,0 +1,198 @@
+<ion-view view-title="Beginner" hide-nav-bar="true" hide-tabs='some-bool-expression'>
+	<ion-content class="padding" ng-controller='FamFatherCtrl'>
+		<div class="row" id="status-bar-level">
+			<a class="icon ion-android-close close-button" ng-href="#/tab/beginner"></a>
+			<progress max="100" value="36"></progress>
+		</div>
+		<div class="row">
+			<div id="score-0">
+				<div class="button button-outline circle-score button-energized button-small" ng-click="openModalScore()" ng-controller='ModalScoreCtrl'>
+					<p>{{value}}</p>
+				</div>
+			</div>
+		</div>
+		<div ng-switch="content">
+			<div class="row" ng-switch-default id="score-1-fam9">
+				<div class="col col-75">
+					<h3>___ is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+			<div class="row" ng-switch-when="content-1" id="score-1-fam9a">
+				<div class="col col-75">
+					<h3><u>She</u> is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+			<div class="row" ng-switch-when="content-2" id="score-1-fam9b">
+				<div class="col col-75">
+					<h3><u>He</u> is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+			<div class="row" ng-switch-when="content-3" id="score-1-fam9c">
+				<div class="col col-75">
+					<h3><u>They</u> is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+			<div class="row" ng-switch-when="content-4" id="score-1-fam9d">
+				<div class="col col-75">
+					<h3><u>It</u> is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+			<div class="row" ng-switch-when="content-5" id="score-1-fam9e">
+				<div class="col col-75">
+					<h3><u>His</u> is a father</h3>
+				</div>
+				<div class="col">
+					<button class="button button-clear" ng-click="openModalLevel()" ng-controller='ModalLevelCtrl'>
+						<img src="img/home-icon.png">
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="sub-word">
+			<h5>Dia adalah seorang ayah</h5>
+			<button ng-click="openModal()" ng-controller='ModalCtrl' class="button-clear"><img src="img/sign-button.png"></button>
+		</div>
+		<div class="sub-word" id="fam-9">
+			<h5>Choose the right word</h5>
+			<div class="row translate-help">
+				<div class="button button-small circle-button button-positive" ng-click="showDiv = !showDiv">?</div>
+				<div ng-show="showDiv" class="cssSlideUp">
+			    	<p>Pilih kata yang tepat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row radio-answer" radio-group>
+			<label class="col item item-radio" id="answer-fam6-1">
+				<input type="radio" ng-model="radioValue" name="choiceId" ng-click="showContent( 1 )" value="She">
+					<div class="button button-outline button-energized button-small">She</div>
+				</input>
+	    </label>
+	    <label class="col item item-radio" id="answer-fam6-2">
+				<input type="radio" ng-model="radioValue" name="choiceId" ng-click="showContent( 2 )" value="He">
+					<div class="button button-outline button-energized button-small">He</div>
+				</input>
+	    </label>
+			<label class="col item item-radio" id="answer-fam6-3">
+				<input type="radio" ng-model="radioValue" name="choiceId" ng-click="showContent( 3 )" value="They">
+					<div class="button button-outline button-energized button-small">They</div>
+				</input>
+	    </label>
+		</div>
+		<div class="row" radio-group>
+			<label class="col item item-radio" id="answer-fam6-4">
+				<input type="radio" ng-model="radioValue" name="choiceId" ng-click="showContent( 4 )" value="It">
+					<div class="button button-outline button-energized button-small">It</div>
+				</input>
+	    </label>
+			<label class="col item item-radio" id="answer-fam6-5">
+				<input type="radio" ng-model="radioValue" name="choiceId" ng-click="showContent( 5 )" value="His">
+					<div class="button button-outline button-energized button-small">His</div>
+				</input>
+	    </label>
+		</div>
+		<div class="button-next">
+			<a class="button button-block button-balanced" ng-disabled="!radioValue" ng-click="showFamAlert()">CHECK</a>
+		</div>
+	</ion-content>
+</ion-view>
+
+<script id="my-modal.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding">
+      	<div class="close-modal">
+          <a class="icon ion-android-close close-button-modal" ng-click="closeModal()"></a>
+        </div>
+        <div class="video-sl text-center">
+          <img src="video/dia_ayah_sl.gif">
+        </div>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-score.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal modal-score fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalScore()">
+      			<i class="ion-android-close"></i>
+      		</button>
+      	</div>
+      	<h4 class="text-center">Your score is</h4>
+        <h1 class="text-center">{{score}}</h1>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="my-modal-level.html" type="text/ng-template">
+  <ion-modal-view class="ion-nifty-modal fade-in-scale">
+    <div class="ion-modal-content-custom">
+      <ion-content class="padding custom-modal-content">
+      	<div class="close-modal-button">
+      		<button class="button button-clear button-small" ng-click="closeModalLevel()">
+      			<i class="ion-android-close"></i>
+      		</button>
+       	</div>
+       	<img src="img/home-icon.png">
+       	<h5 class="text-center">You are in Basic Level</h5>
+      </ion-content>
+    </div>
+  </ion-modal-view>
+</script>
+
+<script id="popup-template-correct.html" type="text/ng-template">
+	<div class="answer-popup-correct">
+		<div class="icon-correct col text-center">
+			<i class="ion-checkmark-circled"></i>
+		</div>
+		<div class="text-center text-correct">
+			<p>Correct</p>
+		</div>
+		<div class="points-correct text-center">
+			<p>You got <b>+50</b> points!</p>
+		</div>
+	</div>
+</script>
+
+<script id="popup-template-incorrect.html" type="text/ng-template">
+	<div class="answer-popup-incorrect">
+		<div class="icon-incorrect col text-center">
+			<i class="ion-close-circled"></i>
+		</div>
+		<div class="text-center text-incorrect">
+			<p>Incorrect</p>
+		</div>
+		<div class="text-center image-incorrect">
+			Your answer is <b>{{radioValue}}</b>. It should be:<br>
+			<h3>He</h3>
+		</div>
+	</div>
+</script>

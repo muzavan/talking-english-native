@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Moon Flower Bold';
+  src: url('Moon Flower Bold.eot');
+  src: url('Moon Flower Bold.woff2') format('woff2'),
+       url('Moon Flower Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MoonFlowerBold';
+  src: url('MoonFlowerBold.woff') format('woff'),
+       url('MoonFlowerBold.ttf') format('truetype'),
+       url('MoonFlowerBold.svg#MoonFlowerBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Moon Flower';
+  src: url('Moon Flower.eot');
+  src: url('Moon Flower.woff2') format('woff2'),
+       url('Moon Flower.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MoonFlower';
+  src: url('MoonFlower.woff') format('woff'),
+       url('MoonFlower.ttf') format('truetype'),
+       url('MoonFlower.svg#MoonFlower') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
