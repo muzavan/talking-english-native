@@ -3,6 +3,7 @@ package kaitor.id.talkingenglish.level.fragment;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +12,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.IOException;
+
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.level.model.MultipleLevel;
 import kaitor.id.talkingenglish.level.model.MultipleLipLevel;
+import pl.droidsonroids.gif.GifDrawable;
 
 /**
  * Created by user pc on 6/12/2016.
@@ -38,7 +42,7 @@ public class MultipleLipFragment extends LevelFragment{
         actualLevel = new MultipleLipLevel();
         actualLevel.setAnswerIndex(2);
         actualLevel.setImageQuestion("drawable/daughter_avatar");
-        actualLevel.setImageAnswers(new String[]{"drawable/daughter_avatar", "drawable/mother_avatar", "drawable/father_avatar", "drawable/son_avatar"});
+        actualLevel.setImageAnswers(new String[]{"gif/example.gif", "gif/example.gif", "gif/example.gif", "gif/example.gif"});
     }
 
     @Nullable
@@ -68,8 +72,16 @@ public class MultipleLipFragment extends LevelFragment{
             }
         });
 
-        int[] resources = convertAnswerToResource();
-        imageAnswer1.setImageResource(resources[1]);
+        GifDrawable[] resources = new GifDrawable[actualLevel.getImageAnswers().length];
+        for(int i=0; i<resources.length;i++){
+            try {
+                resources[i] = new GifDrawable(getContext().getAssets(), actualLevel.getImageAnswers()[i]);
+            } catch (IOException e) {
+                Log.d("GIF","Gagal");
+                e.printStackTrace();
+            }
+        }
+        imageAnswer1.setImageDrawable(resources[1]);
         imageAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +96,7 @@ public class MultipleLipFragment extends LevelFragment{
             }
         });
 
-        imageAnswer2.setImageResource(resources[2]);
+        imageAnswer2.setImageDrawable(resources[2]);
         imageAnswer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,7 +111,7 @@ public class MultipleLipFragment extends LevelFragment{
             }
         });
 
-        imageAnswer3.setImageResource(resources[3]);
+        imageAnswer3.setImageDrawable(resources[3]);
         imageAnswer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,7 +133,7 @@ public class MultipleLipFragment extends LevelFragment{
             imageAnswer0.setBackground(getResources().getDrawable(BORDER));
         }
 
-        imageAnswer0.setImageResource(resources[0]);
+        imageAnswer0.setImageDrawable(resources[0]);
         imageAnswer0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -141,17 +153,6 @@ public class MultipleLipFragment extends LevelFragment{
 
 
         return view;
-    }
-
-    public int[] convertAnswerToResource() {
-        int[] resources = new int[actualLevel.getImageAnswers().length];
-
-        for (int i = 0; i < resources.length; i++) {
-            String uri = actualLevel.getImageAnswers()[i];
-            resources[i] = getResources().getIdentifier(uri, null, getActivity().getPackageName());
-        }
-
-        return resources;
     }
 
     public void initAnswer() {

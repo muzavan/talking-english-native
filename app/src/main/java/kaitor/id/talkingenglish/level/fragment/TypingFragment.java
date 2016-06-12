@@ -1,18 +1,25 @@
 package kaitor.id.talkingenglish.level.fragment;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.IOException;
 
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.level.model.TypingLevel;
+import pl.droidsonroids.gif.GifDrawable;
 
 /**
  * Created by user pc on 5/30/2016.
@@ -53,6 +60,33 @@ public class TypingFragment extends LevelFragment {
             }
         });
 
+        ImageView imageSign = (ImageView) view.findViewById(R.id.image_sign);
+        imageSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View alert = View.inflate(getContext(),R.layout.sign_layout,null);
+                ImageView gifSign = (ImageView) alert.findViewById(R.id.gif_sign);
+
+                try {
+                    GifDrawable gifFromAssets = new GifDrawable(getContext().getAssets(), actualLevel.getHand());
+                    gifSign.setImageDrawable(gifFromAssets);
+                } catch (IOException e) {
+                    Log.d("GIF","Gagal");
+                    e.printStackTrace();
+                }
+
+                AlertDialog dialog = new AlertDialog.Builder(getContext())
+                        .setView(alert)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        }).create();
+                dialog.show();
+            }
+        });
+
         setNextButton();
 
         return view;
@@ -65,6 +99,7 @@ public class TypingFragment extends LevelFragment {
         actualLevel.setAnswer("Mother");
         actualLevel.setQuestion("She is a ___");
         actualLevel.setTranslatedQuestion("Dia adalah seorang ibu");
+        actualLevel.setHand("gif/example.gif");
     }
 
     public void setNextButton(){

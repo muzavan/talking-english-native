@@ -4,18 +4,18 @@ package kaitor.id.talkingenglish.level.model;
  * Created by user pc on 6/12/2016.
  */
 public class LipLevel {
-    private String videoUrl;
+    private String lip;
     private String question;
     private String translatedQuestion;
     private String[] answers;
     private int answerIndex;
 
-    public String getVideoUrl() {
-        return videoUrl;
+    public String getLip() {
+        return lip;
     }
 
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
+    public void setLip(String lip) {
+        this.lip = lip;
     }
 
     public String getQuestion() {

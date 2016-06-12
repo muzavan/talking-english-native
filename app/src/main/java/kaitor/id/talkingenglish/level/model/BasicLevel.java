@@ -5,8 +5,18 @@ package kaitor.id.talkingenglish.level.model;
  */
 public class BasicLevel {
     private String word; // English word
+
+    public String getHand() {
+        return hand;
+    }
+
+    public void setHand(String hand) {
+        this.hand = hand;
+    }
+
     private String type; // Noun, verb, anything
     private String lip; // Resource Name for Lips Reading
+    private String hand;
     private String translation;
 
     public String getTranslation() {

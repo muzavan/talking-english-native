@@ -6,6 +6,7 @@ package kaitor.id.talkingenglish.level.model;
 public class MultipleTextLevel {
     private String word;
     private String type;
+    private String hand;
     private String[] answers;
     private int answerIndex;
 

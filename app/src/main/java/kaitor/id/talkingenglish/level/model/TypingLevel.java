@@ -7,6 +7,15 @@ public class TypingLevel {
     private String question;
     private String translatedQuestion;
     private String answer;
+    private String hand;
+
+    public String getHand() {
+        return hand;
+    }
+
+    public void setHand(String hand) {
+        this.hand = hand;
+    }
 
     public String getQuestion() {
         return question;

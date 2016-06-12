@@ -44,12 +44,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6339deb-5730-4646-bc5a-364195ee4823" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/DialogueFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/DialogueFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TextFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TextFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BlankLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BlankLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TypingLevel.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TypingLevel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_dictionary.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_dictionary.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml" />
     </list>
     <ignored path="TalkingEnglish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,51 +93,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LevelActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28370786">
-              <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultipleTextLevel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java">
+      <file leaf-file-name="LipLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
               <folding>
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#491#492#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#678#679#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_level_basic.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="LevelFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LevelFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.090909">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LipFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleLipLevel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLipLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultipleLipFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="44" column="123" selection-start-line="44" selection-start-column="123" selection-end-line="44" selection-end-column="123" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,11 +163,36 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleTextFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="140" selection-end-column="5" />
+              <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4180#4689#0" expanded="true" />
-                <element signature="e#4688#4689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_level_lip.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.8545455">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypingFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.483146">
+              <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,39 +202,9 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
+              <caret line="84" column="11" selection-start-line="60" selection-start-column="8" selection-end-line="84" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2085#2241#0" expanded="true" />
-                <element signature="e#2240#2241#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogueFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/DialogueFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2733#2889#0" expanded="true" />
-                <element signature="e#2888#2889#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TextFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2121#2277#0" expanded="true" />
-                <element signature="e#2276#2277#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -181,8 +216,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
       </list>
     </option>
   </component>
@@ -715,6 +750,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareDebugUnitTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare pl.droidsonroids.gif:android-gif-drawable:1.1.16" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preparePlDroidsonroidsGifAndroidGifDrawable1116Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1345,6 +1385,11 @@
                 <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare pl.droidsonroids.gif:android-gif-drawable:1.1.16" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="preparePlDroidsonroidsGifAndroidGifDrawable1116Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareReleaseDependencies" />
               </ExternalTaskPojo>
@@ -1515,7 +1560,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4394403224716" />
+        <entry key="$PROJECT_DIR$" value="4394416414541" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1699,6 +1744,7 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/intellij/annotations/12.0/annotations-12.0.jar" />
                             <option value="C:/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1.aar" />
                             <option value="C:/Android/sdk/extras/android/m2repository/com/android/support/design/23.0.1/design-23.0.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.1.16/3221d9244008ccea1bfe4c8cfc150dfddd5ebeb3/android-gif-drawable-1.1.16.aar" />
                             <option value="C:/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.2.1/support-v4-23.2.1.aar" />
                             <option value="C:/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/23.2.1/animated-vector-drawable-23.2.1.aar" />
                             <option value="C:/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/23.2.1/support-vector-drawable-23.2.1.aar" />
@@ -1788,28 +1834,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/BaseLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BaseLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/background_circle.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LevelFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_blank.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/background_border_orange.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BlankLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TypingLevel.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tab_indicatior.xml" />
@@ -1817,11 +1851,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProfileUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/background_border_circle.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLipLevel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/DialogueLevel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/adapter/DialogueAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/DictionaryFragment.java" />
@@ -1830,15 +1861,30 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_dialogue.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_text.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TextLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleTextFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/DialogueFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TextFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProgressUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dictionary.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/sign_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BlankLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TypingLevel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleTextFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java" />
       </list>
     </option>
   </component>
@@ -1902,24 +1948,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TalkingEnglish" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1949,6 +1977,38 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TalkingEnglish" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gif" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TalkingEnglish" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
@@ -1969,28 +2029,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="talkingenglish" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TalkingEnglish" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkingenglish" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2458,115 +2496,24 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java</url>
+          <line>31</line>
+          <properties class="kaitor.id.talkingenglish.level.fragment.TypingFragment" method="&lt;init&gt;" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5936508">
-          <caret line="53" column="36" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9272727">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding>
-            <element signature="e#3069#3738#0" expanded="false" />
-            <element signature="e#3737#3738#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProfileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#856#857#0" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tab_indicatior.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background_border_orange.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -2609,50 +2556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLipLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="149" column="17" selection-start-line="149" selection-start-column="17" selection-end-line="149" selection-end-column="17" />
-          <folding>
-            <element signature="e#5155#5664#0" expanded="true" />
-            <element signature="e#5663#5664#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_dictionary.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2662,10 +2569,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#155#156#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="false" />
+            <element signature="e#187#188#0" expanded="false" />
+            <element signature="e#239#240#0" expanded="false" />
+            <element signature="e#281#282#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2683,16 +2590,8 @@
         <state vertical-scroll-proportion="0.80898875">
           <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LevelFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33426967">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2707,60 +2606,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_dialogue.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TextLevel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#197#198#0" expanded="false" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dictionary.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45182723">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="67" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dictionary.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9601329">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_text.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1454545">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2775,113 +2630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3636363">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_dialogue.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.3818183">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5481728">
-          <caret line="103" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="103" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.056478404">
-          <caret line="61" column="19" selection-start-line="30" selection-start-column="4" selection-end-line="61" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97342193">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="86" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.436363">
-          <caret line="62" column="69" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
-          <folding>
-            <element signature="e#720#744#0" expanded="true" />
-            <element signature="e#1018#1041#0" expanded="true" />
-            <element signature="e#1443#1466#0" expanded="true" />
-            <element signature="e#2015#2039#0" expanded="true" />
-            <element signature="e#2415#2438#0" expanded="true" />
-            <element signature="e#2810#2833#0" expanded="true" />
-            <element signature="e#3181#3204#0" expanded="true" />
-            <element signature="e#3830#3853#0" expanded="true" />
-            <element signature="e#4239#4262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="5" selection-start-line="21" selection-start-column="4" selection-end-line="142" selection-end-column="5" />
-          <folding>
-            <element signature="e#4429#4938#0" expanded="true" />
-            <element signature="e#4937#4938#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BaseLevel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38202247">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/DictionaryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="39" selection-start-line="22" selection-start-column="8" selection-end-line="28" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -2894,102 +2646,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="150" column="27" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4775281">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#757#758#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.090909">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleTextFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="140" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4180#4689#0" expanded="true" />
-            <element signature="e#4688#4689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2085#2241#0" expanded="true" />
-            <element signature="e#2240#2241#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/DialogueFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.9044944">
           <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3001,7 +2660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TextFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.85674155">
           <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3011,11 +2670,369 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProgressUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="53" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/gif/example.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/DictionaryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_basic.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62126243">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dictionary.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.717608">
+          <caret line="72" column="41" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dictionary.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8870432">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.327273">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="86" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_lip.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0">
+          <caret line="111" column="9" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_text.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6181818">
+          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ready.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_welcome.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_dialogue.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2363636">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_dictionary.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sign_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.327273">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28370786">
-          <caret line="92" column="47" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="23" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BasicLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_blank.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3090909">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/BlankLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_dialogue.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7636364">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_multiple_text.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8727274">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleTextLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_typing.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3090909">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/TypingLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BlankFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76123595">
+          <caret line="148" column="60" selection-start-line="148" selection-start-column="60" selection-end-line="148" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/LipLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LevelFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_level_lip.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8545455">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/LipFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/model/MultipleLipLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleLipFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="123" selection-start-line="44" selection-start-column="123" selection-end-line="44" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/MultipleTextFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/BasicFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="11" selection-start-line="60" selection-start-column="8" selection-end-line="84" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/level/fragment/TypingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.483146">
+          <caret line="87" column="11" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,19 +1,26 @@
 package kaitor.id.talkingenglish.level.fragment;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+import java.io.IOException;
+
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.level.model.BlankLevel;
+import pl.droidsonroids.gif.GifDrawable;
 
 /**
  * Created by user pc on 5/30/2016.
@@ -35,6 +42,7 @@ public class BlankFragment extends LevelFragment {
         actualLevel.setTranslatedQuestion("Dia adalah seorang ayah");
         actualLevel.setAnswers(new String[]{"am","are","is","she","it"});
         actualLevel.setAnswerIndex(2);
+        actualLevel.setHand("gif/example.gif");
     }
 
     @Nullable
@@ -126,6 +134,33 @@ public class BlankFragment extends LevelFragment {
                 s = s.replace("***",ans);
                 tvQuestion.setText(s);
                 selectedAnswer = 4;
+            }
+        });
+
+        ImageView imageSign = (ImageView) view.findViewById(R.id.image_sign);
+        imageSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                View alert = View.inflate(getContext(),R.layout.sign_layout,null);
+                ImageView gifSign = (ImageView) alert.findViewById(R.id.gif_sign);
+
+                try {
+                    GifDrawable gifFromAssets = new GifDrawable(getContext().getAssets(), actualLevel.getHand());
+                    gifSign.setImageDrawable(gifFromAssets);
+                } catch (IOException e) {
+                    Log.d("GIF","Gagal");
+                    e.printStackTrace();
+                }
+
+                AlertDialog dialog = new AlertDialog.Builder(getContext())
+                        .setView(alert)
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        }).create();
+                dialog.show();
             }
         });
 

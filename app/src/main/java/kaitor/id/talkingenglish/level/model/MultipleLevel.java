@@ -5,21 +5,11 @@ import android.os.Parcel;
 /**
  * Created by user pc on 5/30/2016.
  */
-public class MultipleLevel extends BaseLevel {
+public class MultipleLevel {
     private String question;
     private String translatedQuestion;
     private String[] answers = new String[4];
     private int answerIndex;
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-
-    }
 
     public String getQuestion() {
         return question;

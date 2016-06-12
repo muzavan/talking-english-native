@@ -6,9 +6,17 @@ package kaitor.id.talkingenglish.level.model;
 public class BlankLevel {
     private String question;
     private String translatedQuestion;
-    private String videoUrl;
+    private String hand;
     private String[] answers;
     private int answerIndex;
+
+    public String getHand() {
+        return hand;
+    }
+
+    public void setHand(String hand) {
+        this.hand = hand;
+    }
 
     public String getQuestion() {
         return question;
@@ -24,14 +32,6 @@ public class BlankLevel {
 
     public void setTranslatedQuestion(String translatedQuestion) {
         this.translatedQuestion = translatedQuestion;
-    }
-
-    public String getVideoUrl() {
-        return videoUrl;
-    }
-
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
     }
 
     public String[] getAnswers() {
