@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import kaitor.id.talkingenglish.level.fragment.BlankFragment;
+import kaitor.id.talkingenglish.level.fragment.DialogueFragment;
 import kaitor.id.talkingenglish.level.fragment.LevelFragment;
 import kaitor.id.talkingenglish.level.fragment.LipFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
@@ -82,6 +83,8 @@ public class LevelActivity extends FragmentActivity {
         levels.add(frag3);
         LevelFragment frag4 = new MultipleLipFragment();
         levels.add(frag4);
+        LevelFragment frag5 = new DialogueFragment();
+        levels.add(frag5);
     }
 
     public void setButtonText(String text){

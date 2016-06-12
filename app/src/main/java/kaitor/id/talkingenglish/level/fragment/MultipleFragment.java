@@ -101,6 +101,7 @@ public class MultipleFragment extends LevelFragment {
         });
 
         imageAnswer0.setImageResource(resources[0]);
+        imageAnswer0.setAlpha(1.0f);
         imageAnswer0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

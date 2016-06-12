@@ -114,6 +114,13 @@ public class MultipleLipFragment extends LevelFragment{
             }
         });
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            imageAnswer0.setBackground(getResources().getDrawable(BORDER,null));
+        }
+        else{
+            imageAnswer0.setBackground(getResources().getDrawable(BORDER));
+        }
+
         imageAnswer0.setImageResource(resources[0]);
         imageAnswer0.setOnClickListener(new View.OnClickListener() {
             @Override
