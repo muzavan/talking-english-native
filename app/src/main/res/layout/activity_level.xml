@@ -48,14 +48,21 @@
             android:progress="20"
             android:progressDrawable="@drawable/greenprogress"/>
 
-        <TextView
-            android:id="@+id/tv_score"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:gravity="right"
-            android:text="0"
-            android:textColor="@color/orange_intermediate"
-            android:textSize="@dimen/h4_welcome_text"/>
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_score"
+                android:background="@drawable/background_border_circle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/orange_intermediate"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 

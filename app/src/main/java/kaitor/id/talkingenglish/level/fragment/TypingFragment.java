@@ -81,7 +81,11 @@ public class TypingFragment extends LevelFragment {
                 }
                 else{
                     if(editAnswer.getText().toString().equalsIgnoreCase(actualLevel.getAnswer())){
+                        Toast.makeText(getContext(),"You're right!",Toast.LENGTH_SHORT).show();
                         activity.addScore(20);
+                    }
+                    else{
+                        Toast.makeText(getContext(),"You're wrong.",Toast.LENGTH_SHORT).show();
                     }
                     activity.changeLevel();
                 }
