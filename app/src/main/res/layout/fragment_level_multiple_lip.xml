@@ -76,7 +76,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@color/black"
             android:src="@drawable/father_avatar"/>
 
 
@@ -87,7 +86,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@color/black"
             android:src="@drawable/father_avatar"/>
 
     </LinearLayout>
@@ -106,7 +104,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@color/black"
             android:src="@drawable/father_avatar"/>
 
         <pl.droidsonroids.gif.GifImageView
@@ -116,7 +113,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:background="@color/black"
             android:src="@drawable/father_avatar"/>
 
 

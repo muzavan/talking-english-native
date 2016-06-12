@@ -45,7 +45,9 @@ public class MultipleTextFragment extends LevelFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_level_lip, container, false);
+        View view = inflater.inflate(R.layout.fragment_level_multiple_text, container, false);
+        TextView tvWord = (TextView) view.findViewById(R.id.tv_word);
+        TextView tvType = (TextView) view.findViewById(R.id.tv_type);
         final TextView tvTranslation = (TextView) view.findViewById(R.id.tv_translation);
         TextView tvHelp = (TextView) view.findViewById(R.id.tv_help_text);
         tvAnswer1 = (TextView) view.findViewById(R.id.tv_answer_1);
@@ -53,6 +55,8 @@ public class MultipleTextFragment extends LevelFragment {
         tvAnswer3 = (TextView) view.findViewById(R.id.tv_answer_3);
         tvAnswer0 = (TextView) view.findViewById(R.id.tv_answer_0);
 
+        tvWord.setText(actualLevel.getWord());
+        tvType.setText(actualLevel.getType());
         tvTranslation.setVisibility(View.GONE);
 
         tvHelp.setOnClickListener(new View.OnClickListener() {
