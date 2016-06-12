@@ -655,7 +655,7 @@ public class LevelUtil {
 
     }
 
-    private ArrayList<LevelFragment> getLevels(){
+    public ArrayList<LevelFragment> getLevels(){
         return levels;
     }
 }

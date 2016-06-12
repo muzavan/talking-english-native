@@ -91,7 +91,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:alpha="0.5f"
+                android:alpha="0.5"
                 android:orientation="vertical">
 
                 <ImageView
@@ -127,7 +127,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:alpha="0.5f"
+                android:alpha="0.5"
                 android:orientation="vertical">
 
                 <ImageView
@@ -154,7 +154,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:alpha="0.5f"
+                android:alpha="0.5"
                 android:orientation="vertical">
 
                 <ImageView

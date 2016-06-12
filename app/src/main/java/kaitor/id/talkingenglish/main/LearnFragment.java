@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 
 import kaitor.id.talkingenglish.ChooseActivity;
 import kaitor.id.talkingenglish.R;
+import kaitor.id.talkingenglish.util.LevelUtil;
 import kaitor.id.talkingenglish.util.ProgressUtil;
 
 /**
@@ -34,31 +35,37 @@ public class LearnFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ChooseActivity.class);
+                intent.putExtra("level",0);
                 getActivity().startActivity(intent);
             }
         });
 
         progressBeginner.setProgress(progressUtil.getBeginner());
+        progressBeginner.setMax(LevelUtil.BEGINNER_LEVELS.length);
 
         layoutIntermediate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ChooseActivity.class);
+                intent.putExtra("level",1);
                 getActivity().startActivity(intent);
             }
         });
 
         progressIntermediate.setProgress(progressUtil.getIntermediate());
+        progressIntermediate.setMax(LevelUtil.INTERMEDIATE_LEVELS.length);
 
         layoutAdvanced.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ChooseActivity.class);
+                intent.putExtra("level",2);
                 getActivity().startActivity(intent);
             }
         });
 
         progressAdvanced.setProgress(progressUtil.getAdvanced());
+        progressAdvanced.setMax(LevelUtil.ADVANCED_LEVELS.length);
 
         return view;
     }

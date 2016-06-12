@@ -27,7 +27,7 @@
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:id="@+id/image_badge"
-        android:src="@drawable/writehome"
+        android:src="@drawable/home_badge"
         android:layout_height="150dp"/>
 
     <TextView
