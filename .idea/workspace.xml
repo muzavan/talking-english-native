@@ -7,19 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96624ceb-501b-410f-8b5e-d26a25657ca6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/FinishActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/LevelActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/LevelUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/LevelUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProfileUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProfileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProgressUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/ProgressUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_advanced.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_advanced.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_intermediate.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_intermediate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
     </list>
     <ignored path="TalkingEnglish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProfileFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProfileFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state vertical-scroll-proportion="1.6883802">
+              <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChooseActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChooseActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31161973">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding>
                 <element signature="e#2041#2042#0" expanded="true" />
@@ -1804,11 +1792,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/FinishActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/util/LevelUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_advanced.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_intermediate.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java" />
       </list>
     </option>
   </component>
@@ -2493,14 +2481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_choose.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2555,11 +2535,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/ChooseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31161973">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="e#2041#2042#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/kaitor/id/talkingenglish/main/ProfileFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6883802">
+          <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

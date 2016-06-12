@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import kaitor.id.talkingenglish.R;
 import kaitor.id.talkingenglish.util.ProfileUtil;
+import kaitor.id.talkingenglish.util.ProgressUtil;
 
 /**
  * Created by user pc on 5/28/2016.
@@ -71,7 +72,7 @@ public class ProfileFragment extends Fragment {
         imageTraffic = (ImageView) view.findViewById(R.id.image_traffic);
         imageHospital = (ImageView) view.findViewById(R.id.image_hospital);
 
-
+        initBadges();
         tvScore = (TextView) view.findViewById(R.id.tv_score);
         tvScore.setText(util.getScore()+"");
         return view;
@@ -80,8 +81,56 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        initBadges();
         ProfileUtil util = new ProfileUtil(getContext());
         tvScore.setText(util.getScore()+"");
+    }
+
+    public void initBadges(){
+        ProgressUtil progressUtil = new ProgressUtil(getContext());
+
+        //Beginner
+        if(progressUtil.getTopicStatus("home")){
+            imageHome.setImageResource(R.drawable.home_badge);
+        }
+        if(progressUtil.getTopicStatus("fruits")){
+            imageFruits.setImageResource(R.drawable.fruits_badge);
+        }
+        if(progressUtil.getTopicStatus("number")){
+            imageNumber.setImageResource(R.drawable.number_badge);
+        }
+        if(progressUtil.getTopicStatus("family")){
+            imageFamily.setImageResource(R.drawable.family_badge);
+        }
+
+        //Intermediate
+        if(progressUtil.getTopicStatus("school")){
+            imageSchool.setImageResource(R.drawable.school_badge);
+        }
+        if(progressUtil.getTopicStatus("transportation")){
+            imageTransportation.setImageResource(R.drawable.transportation_badge);
+        }
+        if(progressUtil.getTopicStatus("library")){
+            imageLibrary.setImageResource(R.drawable.library_badge);
+        }
+        if(progressUtil.getTopicStatus("hobbies")){
+            imageHobbies.setImageResource(R.drawable.hobbies_badge);
+        }
+
+        //Advanced
+        if(progressUtil.getTopicStatus("supermarket")){
+            imageSupermarket.setImageResource(R.drawable.supermarket_badge);
+        }
+        if(progressUtil.getTopicStatus("factory")){
+            imageFactory.setImageResource(R.drawable.factory_badge);
+        }
+        if(progressUtil.getTopicStatus("traffic")){
+            imageTraffic.setImageResource(R.drawable.traffic_badge);
+        }
+        if(progressUtil.getTopicStatus("hospital")){
+            imageHospital.setImageResource(R.drawable.hospital_badge);
+        }
+
     }
 
 }
