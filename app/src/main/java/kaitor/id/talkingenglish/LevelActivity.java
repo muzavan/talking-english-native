@@ -19,6 +19,7 @@ import kaitor.id.talkingenglish.level.fragment.LevelFragment;
 import kaitor.id.talkingenglish.level.fragment.LipFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleFragment;
 import kaitor.id.talkingenglish.level.fragment.MultipleLipFragment;
+import kaitor.id.talkingenglish.level.fragment.MultipleTextFragment;
 import kaitor.id.talkingenglish.level.fragment.TextFragment;
 import kaitor.id.talkingenglish.level.fragment.TypingFragment;
 import kaitor.id.talkingenglish.util.ProfileUtil;
@@ -91,6 +92,8 @@ public class LevelActivity extends FragmentActivity {
         levels.add(frag5);
         LevelFragment frag6 = new TextFragment();
         levels.add(frag6);
+        LevelFragment frag7 = new MultipleTextFragment();
+        levels.add(frag7);
     }
 
     public void setButtonText(String text){

@@ -39,7 +39,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:id="@+id/image_lip"
         android:src="@drawable/sign_button"/>
 
     <ImageView
@@ -47,5 +46,6 @@
         android:layout_height="250dp"
         android:background="@color/black"
         android:scaleType="fitCenter"
+        android:id="@+id/image_lip"
         android:src="@drawable/father_lipread"/>
 </LinearLayout>

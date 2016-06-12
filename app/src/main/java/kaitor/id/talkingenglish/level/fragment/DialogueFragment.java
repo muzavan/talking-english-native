@@ -64,7 +64,21 @@ public class DialogueFragment extends LevelFragment {
             }
         });
 
+        setNextButton();
         ((LevelActivity)getActivity()).setButtonText("NEXT");
         return view;
+    }
+
+    public void setNextButton(){
+        final LevelActivity activity = (LevelActivity) getActivity();
+        Button btnNext = activity.getButtonNext();//(Button)activity.findViewById(R.id.button_next);
+
+        btnNext.setText("NEXT");
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.changeLevel();
+            }
+        });
     }
 }

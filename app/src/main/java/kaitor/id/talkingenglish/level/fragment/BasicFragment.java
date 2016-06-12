@@ -5,8 +5,10 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import kaitor.id.talkingenglish.LevelActivity;
 import kaitor.id.talkingenglish.R;
@@ -44,9 +46,21 @@ public class BasicFragment extends LevelFragment{
         tvTranslation.setText(actualLevel.getTranslation());
         tvType.setText(actualLevel.getType());
         imageLip.setImageResource(getResources().getIdentifier(actualLevel.getLip(), null, getActivity().getPackageName()));
-
-        ((LevelActivity)getActivity()).setButtonText("NEXT");
+        setNextButton();
         return view;
+    }
+
+    public void setNextButton(){
+        final LevelActivity activity = (LevelActivity) getActivity();
+        Button btnNext = activity.getButtonNext();//(Button)activity.findViewById(R.id.button_next);
+
+        btnNext.setText("NEXT");
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.changeLevel();
+            }
+        });
     }
 
 

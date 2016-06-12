@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import kaitor.id.talkingenglish.LevelActivity;
@@ -48,10 +49,23 @@ public class TextFragment extends LevelFragment {
             }
         });
 
-        ((LevelActivity)getActivity()).setButtonText("NEXT");
+        setNextButton();
 
         TextView tvText = (TextView) view.findViewById(R.id.tv_text);
         tvText.setText(actualLevel.getText());
         return view;
+    }
+
+    public void setNextButton(){
+        final LevelActivity activity = (LevelActivity) getActivity();
+        Button btnNext = activity.getButtonNext();//(Button)activity.findViewById(R.id.button_next);
+
+        btnNext.setText("NEXT");
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.changeLevel();
+            }
+        });
     }
 }
