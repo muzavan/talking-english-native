@@ -23,6 +23,10 @@
         </activity>
         <activity android:theme="@style/Theme.AppCompat.Light" android:name=".LevelActivity">
         </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name=".FinishActivity">
+        </activity>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name=".TrainingActivity">
+        </activity>
     </application>
 
 </manifest>

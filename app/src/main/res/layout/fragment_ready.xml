@@ -51,6 +51,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:id="@+id/button_start"
+        android:background="@color/white"
         android:text="Start >"
         android:layout_height="wrap_content"/>
 

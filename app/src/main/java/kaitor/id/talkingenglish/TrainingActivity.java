@@ -43,7 +43,6 @@ public class TrainingActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        checkLogin();
         setContentView(R.layout.activity_welcome);
 
         topic = getIntent().getExtras().getString("topic",topic);
@@ -95,14 +94,6 @@ public class TrainingActivity extends FragmentActivity {
         }
     }
 
-    private void checkLogin() {
-        ProfileUtil util = new ProfileUtil(getApplicationContext());
-        if (util.isLogin()) {
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
-    }
 
     private void setDefaultMarker() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {

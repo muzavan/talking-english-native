@@ -17,6 +17,7 @@
         android:textColor="@color/white"
         android:textSize="@dimen/h1_welcome_text"
         android:text="Get the Badge(s)!"
+        android:id="@+id/tv_get_badge"
         android:gravity="center_horizontal"
         android:layout_height="wrap_content"/>
 

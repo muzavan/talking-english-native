@@ -73,7 +73,7 @@ public class LevelUtil {
             blank1.setAnswerIndex(3);
 
             TypingLevel typing1 = new TypingLevel();
-            typing1.setQuestion("She is a ***");
+            typing1.setQuestion("She is a ___");
             typing1.setTranslatedQuestion("Dia adalah seorang ibu");
             typing1.setHand("gif/dia_ibu_sl.gif");
             typing1.setAnswer("mother");
@@ -93,7 +93,7 @@ public class LevelUtil {
             blank2.setAnswerIndex(1);
 
             TypingLevel typing2 = new TypingLevel();
-            typing2.setQuestion("Hhe is a ***");
+            typing2.setQuestion("He is a __");
             typing2.setTranslatedQuestion("Dia adalah seorang ayah");
             typing2.setHand("gif/dia_ayah_sl.gif");
             typing2.setAnswer("father");
@@ -318,7 +318,7 @@ public class LevelUtil {
             basic7.setLip("gif/pay_attention.gif");
 
             BlankLevel blank3 = new BlankLevel();
-            blank3.setQuestion("The students *** *** attention to their teacher");
+            blank3.setQuestion("The students *** attention to their teacher");
             blank3.setTranslatedQuestion("Murid-murid sedang memperhatikan gurunya");
             blank3.setHand("gif/murid_lihat_guru.gif");
             blank3.setAnswers(new String[]{"is paying","are looking","are paying","is learning","is looking"});
@@ -387,7 +387,7 @@ public class LevelUtil {
             basic10.setLip("gif/student_will_study.gif");
 
             BlankLevel blank6 = new BlankLevel();
-            blank6.setQuestion("The students *** *** Math tomorrow");
+            blank6.setQuestion("The students *** Math tomorrow");
             blank6.setTranslatedQuestion("Murid-murid akan belajar Matematika besok");
             blank6.setHand("gif/murid_akan_belajar.gif");
             blank6.setAnswers(new String[]{"are study","is study","will study","will studied","is studied"});

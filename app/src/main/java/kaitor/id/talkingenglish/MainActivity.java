@@ -32,17 +32,6 @@ public class MainActivity extends FragmentActivity {
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mTabHost.setup(this, getSupportFragmentManager(), R.id.main_content);
 
-//        Drawable learnIcon,profileIcon,dictionaryIcon;
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            learnIcon = getDrawable(R.drawable.ic_class_black_24dp);
-//            profileIcon = getDrawable(R.drawable.ic_face_black_24dp);
-//            dictionaryIcon = getDrawable(R.drawable.ic_search_black_24dp);
-//        }
-//        else{
-//            learnIcon = getResources().getDrawable(R.drawable.ic_class_black_24dp);
-//            profileIcon = getResources().getDrawable(R.drawable.ic_face_black_24dp);
-//            dictionaryIcon = getResources().getDrawable(R.drawable.ic_search_black_24dp);
-//        }
         View v0 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);
         View v1 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);
         View v2 = View.inflate(getBaseContext(),R.layout.tab_indicatior,null);

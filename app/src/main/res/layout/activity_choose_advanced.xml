@@ -41,15 +41,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:gravity="center_horizontal"
-            android:text="CHOOSE THE TOPIC"
             android:id="@+id/tv_choose"
+            android:text="CHOOSE THE TOPIC"
             android:textColor="@color/red_advanced"
-            android:textSize="@dimen/h4_welcome_text"/>
+            android:textSize="@dimen/h1_welcome_text"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 

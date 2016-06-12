@@ -25,6 +25,7 @@ public class ProgressUtil {
         editor.commit();
     }
 
+
     public boolean getTopicStatus(String topic){
         return (mSharedPreferences.contains(topic.toLowerCase()) && mSharedPreferences.getBoolean(topic.toLowerCase(),false));
     }

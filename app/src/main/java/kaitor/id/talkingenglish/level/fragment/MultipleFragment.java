@@ -44,7 +44,7 @@ public class MultipleFragment extends LevelFragment {
     }
 
     public void setLevel(MultipleLevel level){
-
+        actualLevel = level;
     }
 
 

@@ -10,6 +10,7 @@
         android:textSize="@dimen/h1_welcome_text"
         android:textColor="@color/white"
         android:text="Explanation"
+        android:id="@+id/tv_explanation"
         android:gravity="center"
         android:layout_height="wrap_content"/>
 

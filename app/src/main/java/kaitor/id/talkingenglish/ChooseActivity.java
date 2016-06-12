@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import kaitor.id.talkingenglish.util.ProgressUtil;
+
 public class ChooseActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -46,17 +48,23 @@ public class ChooseActivity extends AppCompatActivity implements View.OnClickLis
                 /**
                  * TODO : Put Topic and Level
                  */
-                switch (level){
-                    case 1 :
-                        intent.putExtra("topic","school");
+                if(!new ProgressUtil(getBaseContext()).getTopicStatus("first")){
+                    new ProgressUtil(getBaseContext()).setTopic("first");
+                    intent = new Intent(ChooseActivity.this,TrainingActivity.class);
+                }
+
+                switch (level) {
+                    case 1:
+                        intent.putExtra("topic", "school");
                         break;
-                    case 2 :
-                        intent.putExtra("topic","supermarket");
+                    case 2:
+                        intent.putExtra("topic", "supermarket");
                         break;
                     default:
-                        intent.putExtra("topic","home");
+                        intent.putExtra("topic", "home");
                         break;
                 }
+
                 startActivity(intent);
             }
         });
